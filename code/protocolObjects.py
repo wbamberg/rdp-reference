@@ -19,8 +19,11 @@ def writeMessages(messages, actorName, output, dicts):
 
         retval = message["response"].get("_retval")
         if retval:
-            dictionary = dicts.get(retval)
-            print actorName + " : " + message["request"]["type"]
+            for dictionary in dicts:
+                if dictionary["typeName"] == retval:
+                    print retval + " is a dictionary type: "
+                    for specialization in dictionary["specializations"]:
+                        print specialization + " : " + dictionary["specializations"][specialization]
         else:
             responseList = message["response"].items()
             if len(responseList) > 0:
@@ -29,6 +32,6 @@ def writeMessages(messages, actorName, output, dicts):
 
 def writeActor(actor, dicts):
     actorName = actor["typeName"]
-    output = open("../docs/" + actorName + ".md", "w")
+    output = open("../" + actorName + ".md", "w")
     md.writeH1(actorName, output)
     writeMessages(actor["methods"], actorName, output, dicts)
