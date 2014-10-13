@@ -32,6 +32,7 @@ def writeMessages(messages, actorName, output, dicts):
 
 def writeActor(actor, dicts):
     actorName = actor["typeName"]
-    output = open("../" + actorName + ".md", "w")
+    output = open("../docs/" + actorName + ".md", "w")
+    md.writeFront(output)
     md.writeH1(actorName, output)
     writeMessages(actor["methods"], actorName, output, dicts)

@@ -5,7 +5,8 @@ import protocolObjects
 import md
 
 protocolDescription = open("../protocolDescription/protocol.json", "r")
-index = open("../index.md", "w")
+index = open("../docs/index.md", "w")
+md.writeFront(index)
 
 types = json.load(protocolDescription)["types"]
 

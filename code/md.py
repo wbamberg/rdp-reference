@@ -1,3 +1,6 @@
+def writeFront(output):
+    output.write("---\n---\n")
+
 def writeMDLink(name, target, output):
    output.write("[" + name + "]" + "(" + target + ".html)\n")
 
