@@ -38,7 +38,7 @@ index.write("\n## Actors ##\n\n")
 for actor in actors:
     md.writeMDLink(actor["typeName"], actor["typeName"], index)
     md.writeLineBreak(index)
-    protocolObjects.writeActor(actor)
+    protocolObjects.writeActor(actor, dicts)
 
 index.write("\n## Dictionaries ##\n\n")
 for dictionary in dicts:

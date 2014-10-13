@@ -3,7 +3,7 @@ import os
 import operator
 import md
 
-def writeMessages(messages, actorName, output):
+def writeMessages(messages, actorName, output, dicts):
     md.writeH2("Messages", output)
     for message in messages:
         md.writeH3(message["name"], output)
@@ -19,6 +19,7 @@ def writeMessages(messages, actorName, output):
 
         retval = message["response"].get("_retval")
         if retval:
+            dictionary = dicts.get(retval)
             print actorName + " : " + message["request"]["type"]
         else:
             responseList = message["response"].items()
@@ -26,27 +27,8 @@ def writeMessages(messages, actorName, output):
                 md.writeH4("Response", output)
                 output.write(responseList[0][1]["_retval"] + "\n")
 
-def writeActor(actor):
+def writeActor(actor, dicts):
     actorName = actor["typeName"]
     output = open("../docs/" + actorName + ".md", "w")
     md.writeH1(actorName, output)
-    writeMessages(actor["methods"], actorName, output)
-
-
-
-
-class Actor(object):
-    def __init__(self, json):
-        self.json = json
-        self._messages = []
-        for messageJson in json["methods"]:
-            self._methods.append(Method(methodJson))
-
-    def typeName(self):
-        return self.json["typeName"]
-
-    def methods(self):
-        return self._methods
-
-    #def events(self):
-        #return self.events
+    writeMessages(actor["methods"], actorName, output, dicts)
