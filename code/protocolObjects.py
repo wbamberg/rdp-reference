@@ -1,7 +1,6 @@
 import json
 import os
 import operator
-import actor
 import md
 
 def writeMessages(messages, actorName, output):
@@ -29,7 +28,7 @@ def writeMessages(messages, actorName, output):
 
 def writeActor(actor):
     actorName = actor["typeName"]
-    output = open("../extracted/" + actorName + ".md", "w")
+    output = open("../docs/" + actorName + ".md", "w")
     md.writeH1(actorName, output)
     writeMessages(actor["methods"], actorName, output)
 

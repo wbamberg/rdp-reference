@@ -5,7 +5,7 @@ import protocolObjects
 import md
 
 protocolDescription = open("../protocolDescription/protocol.json", "r")
-index = open("../extracted/index.md", "w")
+index = open("../docs/index.md", "w")
 
 types = json.load(protocolDescription)["types"]
 
@@ -37,6 +37,7 @@ dicts = getList(types, "dict")
 index.write("\n## Actors ##\n\n")
 for actor in actors:
     md.writeMDLink(actor["typeName"], actor["typeName"], index)
+    md.writeLineBreak(index)
     protocolObjects.writeActor(actor)
 
 index.write("\n## Dictionaries ##\n\n")

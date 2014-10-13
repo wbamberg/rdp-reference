@@ -1,6 +1,9 @@
 def writeMDLink(name, target, output):
    output.write("[" + name + "]" + "(" + target + ".html)\n")
 
+def writeLineBreak(output):
+   output.write("\n")
+
 def writeHTMLLink(name, target, output):
    output.write("<a href=\"" + target + "\">" + name + "</a>\n")
 
