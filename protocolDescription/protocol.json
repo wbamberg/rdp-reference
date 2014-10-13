@@ -1,0 +1,3212 @@
+
+
+{
+  "types": {
+    "chromium_property": {
+      "category": "dict",
+      "typeName": "chromium_property",
+      "specializations": {
+        "value": "chromium_grip",
+        "get": "nullable:chromium_grip",
+        "set": "nullable:chromium_grip"
+      }
+    },
+    "chromium_prototypeAndPropertiesResponse": {
+      "category": "dict",
+      "typeName": "chromium_prototypeAndPropertiesResponse",
+      "specializations": {
+        "prototype": "nullable:chromium_grip",
+        "ownProperties": "chromium_propertylist"
+      }
+    },
+    "chromium_objectgrip": {
+      "category": "actor",
+      "typeName": "chromium_objectgrip",
+      "methods": [
+        {
+          "name": "definitionSite",
+          "request": {
+            "type": "definitionSite"
+          },
+          "response": {}
+        },
+        {
+          "name": "parameterNames",
+          "request": {
+            "type": "parameterNames"
+          },
+          "response": {}
+        },
+        {
+          "name": "prototypeAndProperties",
+          "request": {
+            "type": "prototypeAndProperties"
+          },
+          "response": {
+            "_retval": "chromium_prototypeAndPropertiesResponse"
+          }
+        },
+        {
+          "name": "prototype",
+          "request": {
+            "type": "prototype"
+          },
+          "response": {}
+        },
+        {
+          "name": "property",
+          "request": {
+            "type": "property"
+          },
+          "response": {}
+        },
+        {
+          "name": "displayString",
+          "request": {
+            "type": "displayString"
+          },
+          "response": {}
+        },
+        {
+          "name": "ownPropertyNames",
+          "request": {
+            "type": "ownPropertyNames"
+          },
+          "response": {}
+        },
+        {
+          "name": "decompile",
+          "request": {
+            "type": "decompile"
+          },
+          "response": {}
+        },
+        {
+          "name": "release",
+          "release": true,
+          "request": {
+            "type": "release"
+          },
+          "response": {}
+        },
+        {
+          "name": "scope",
+          "request": {
+            "type": "scope"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_consolemsg": {
+      "category": "dict",
+      "typeName": "chromium_consolemsg",
+      "specializations": {
+        "arguments": "array:chromium_grip"
+      }
+    },
+    "chromium_evalJSResponse": {
+      "category": "dict",
+      "typeName": "chromium_evalJSResponse",
+      "specializations": {
+        "result": "nullable:chromium_grip"
+      }
+    },
+    "chromium_console": {
+      "category": "actor",
+      "typeName": "chromium_console",
+      "methods": [
+        {
+          "name": "startListeners",
+          "request": {
+            "type": "startListeners",
+            "listeners": {
+              "_arg": 0,
+              "type": "array:string"
+            }
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "stopListeners",
+          "request": {
+            "type": "stopListeners",
+            "listeners": {
+              "_arg": 0,
+              "type": "array:string"
+            }
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "getCachedMessages",
+          "request": {
+            "type": "getCachedMessages",
+            "messageTypes": {
+              "_arg": 0,
+              "type": "array:string"
+            }
+          },
+          "response": {
+            "messages": {
+              "_retval": "array:chromium_consolemsg"
+            }
+          }
+        },
+        {
+          "name": "clearMessagesCache",
+          "request": {
+            "type": "clearMessagesCache"
+          },
+          "response": {}
+        },
+        {
+          "name": "evaluateJS",
+          "request": {
+            "type": "evaluateJS",
+            "text": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "_retval": "chromium_evalJSResponse"
+          }
+        },
+        {
+          "name": "autocomplete",
+          "request": {
+            "type": "autocomplete",
+            "text": {
+              "_arg": 0,
+              "type": "string"
+            },
+            "cursor": {
+              "_arg": 1,
+              "type": "number"
+            }
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "getPreferences",
+          "request": {
+            "type": "getPreferences"
+          },
+          "response": {}
+        },
+        {
+          "name": "setPreferences",
+          "request": {
+            "type": "setPreferences"
+          },
+          "response": {}
+        },
+        {
+          "name": "sendHTTPRequest",
+          "request": {
+            "type": "sendHTTPRequest"
+          },
+          "response": {}
+        }
+      ],
+      "events": {
+        "ConsoleAPI": {
+          "type": "consoleAPICall",
+          "message": {
+            "_arg": 0,
+            "type": "chromium_consolemsg"
+          }
+        }
+      }
+    },
+    "longstractor": {
+      "category": "actor",
+      "typeName": "longstractor",
+      "methods": [
+        {
+          "name": "substring",
+          "request": {
+            "type": "substring",
+            "start": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "end": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "substring": {
+              "_retval": "primitive"
+            }
+          }
+        },
+        {
+          "name": "release",
+          "release": true,
+          "request": {
+            "type": "release"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_domnode": {
+      "category": "actor",
+      "typeName": "chromium_domnode",
+      "methods": [
+        {
+          "name": "getNodeValue",
+          "request": {
+            "type": "getNodeValue"
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "setNodeValue",
+          "request": {
+            "type": "setNodeValue",
+            "value": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "getImageData",
+          "request": {
+            "type": "getImageData",
+            "maxDim": {
+              "_arg": 0,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "_retval": "chromium_imageData"
+          }
+        },
+        {
+          "name": "getEventListenerInfo",
+          "request": {
+            "type": "getEventListenerInfo"
+          },
+          "response": {
+            "events": {
+              "_retval": "json"
+            }
+          }
+        },
+        {
+          "name": "modifyAttributes",
+          "request": {
+            "type": "modifyAttributes",
+            "modifications": {
+              "_arg": 0,
+              "type": "array:json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "getFontFamilyDataURL",
+          "request": {
+            "type": "getFontFamilyDataURL",
+            "font": {
+              "_arg": 0,
+              "type": "string"
+            },
+            "fillStyle": {
+              "_arg": 1,
+              "type": "nullable:string"
+            }
+          },
+          "response": {
+            "_retval": "chromium_imageData"
+          }
+        }
+      ],
+      "events": {}
+    },
+    "chromium_domstylerule": {
+      "category": "actor",
+      "typeName": "chromium_domstylerule",
+      "methods": [
+        {
+          "name": "modifyProperties",
+          "request": {
+            "type": "modifyProperties",
+            "modifications": {
+              "_arg": 0,
+              "type": "array:json"
+            }
+          },
+          "response": {
+            "rule": {
+              "_retval": "chromium_domstylerule"
+            }
+          }
+        },
+        {
+          "name": "modifySelector",
+          "request": {
+            "type": "modifySelector",
+            "selector": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "isModified": {
+              "_retval": "boolean"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "chromium_appliedstyle": {
+      "category": "dict",
+      "typeName": "chromium_appliedstyle",
+      "specializations": {
+        "rule": "chromium_domstylerule#actorid",
+        "inherited": "nullable:chromium_domnode#actorid"
+      }
+    },
+    "chromium_matchedselectorresponse": {
+      "category": "dict",
+      "typeName": "chromium_matchedselectorresponse",
+      "specializations": {
+        "rules": "array:chromium_domstylerule",
+        "sheets": "array:chromium_stylesheet",
+        "matched": "array:chromium_matchedselector"
+      }
+    },
+    "chromium_appliedStylesReturn": {
+      "category": "dict",
+      "typeName": "chromium_appliedStylesReturn",
+      "specializations": {
+        "entries": "array:chromium_appliedstyle",
+        "rules": "array:chromium_domstylerule",
+        "sheets": "array:chromium_stylesheet"
+      }
+    },
+    "chromium_pagestyle": {
+      "category": "actor",
+      "typeName": "chromium_pagestyle",
+      "methods": [
+        {
+          "name": "getComputed",
+          "request": {
+            "type": "getComputed",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "markMatched": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "onlyMatched": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "filter": {
+              "_option": 1,
+              "type": "string"
+            }
+          },
+          "response": {
+            "computed": {
+              "_retval": "json"
+            }
+          }
+        },
+        {
+          "name": "getMatchedSelectors",
+          "request": {
+            "type": "getMatchedSelectors",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "property": {
+              "_arg": 1,
+              "type": "string"
+            },
+            "filter": {
+              "_option": 2,
+              "type": "string"
+            }
+          },
+          "response": {
+            "_retval": "chromium_matchedselectorresponse"
+          }
+        },
+        {
+          "name": "getApplied",
+          "request": {
+            "type": "getApplied",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "inherited": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "matchedSelectors": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "filter": {
+              "_option": 1,
+              "type": "string"
+            }
+          },
+          "response": {
+            "_retval": "chromium_appliedStylesReturn"
+          }
+        },
+        {
+          "name": "getLayout",
+          "request": {
+            "type": "getLayout",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "autoMargins": {
+              "_option": 1,
+              "type": "boolean"
+            }
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "addNewRule",
+          "request": {
+            "type": "addNewRule",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {
+            "_retval": "chromium_appliedStylesReturn"
+          }
+        }
+      ],
+      "events": {}
+    },
+    "chromium_originallocationresponse": {
+      "category": "dict",
+      "typeName": "chromium_originallocationresponse",
+      "specializations": {
+        "source": "string",
+        "line": "number",
+        "column": "number"
+      }
+    },
+    "chromium_stylesheet": {
+      "category": "actor",
+      "typeName": "chromium_stylesheet",
+      "methods": [
+        {
+          "name": "toggleDisabled",
+          "request": {
+            "type": "toggleDisabled"
+          },
+          "response": {
+            "disabled": {
+              "_retval": "boolean"
+            }
+          }
+        },
+        {
+          "name": "getText",
+          "request": {
+            "type": "getText"
+          },
+          "response": {
+            "text": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "getOriginalSources",
+          "request": {
+            "type": "getOriginalSources"
+          },
+          "response": {}
+        },
+        {
+          "name": "getOriginalLocation",
+          "request": {
+            "type": "getOriginalLocation",
+            "line": {
+              "_arg": 0,
+              "type": "number"
+            },
+            "column": {
+              "_arg": 1,
+              "type": "number"
+            }
+          },
+          "response": {
+            "_retval": "chromium_originallocationresponse"
+          }
+        },
+        {
+          "name": "getMediaRules",
+          "request": {
+            "type": "getMediaRules"
+          },
+          "response": {}
+        },
+        {
+          "name": "update",
+          "request": {
+            "type": "update",
+            "text": {
+              "_arg": 0,
+              "type": "string"
+            },
+            "transition": {
+              "_arg": 1,
+              "type": "boolean"
+            }
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_stylesheets": {
+      "category": "actor",
+      "typeName": "chromium_stylesheets",
+      "methods": [
+        {
+          "name": "getStyleSheets",
+          "request": {
+            "type": "getStyleSheets"
+          },
+          "response": {
+            "styleSheets": {
+              "_retval": "array:chromium_stylesheet"
+            }
+          }
+        },
+        {
+          "name": "addStyleSheet",
+          "request": {
+            "type": "addStyleSheet",
+            "text": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "styleSheet": {
+              "_retval": "chromium_stylesheet"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "chromium_disconnectedNode": {
+      "category": "dict",
+      "typeName": "chromium_disconnectedNode",
+      "specializations": {
+        "node": "chromium_domnode",
+        "newParents": "array:chromium_domnode"
+      }
+    },
+    "chromium_dommutation": {
+      "category": "dict",
+      "typeName": "chromium_dommutation",
+      "specializations": {}
+    },
+    "chromium_imageData": {
+      "category": "dict",
+      "typeName": "chromium_imageData",
+      "specializations": {
+        "data": "nullable:longstring",
+        "size": "json"
+      }
+    },
+    "chromium_domnodelist": {
+      "category": "actor",
+      "typeName": "chromium_domnodelist",
+      "methods": [
+        {
+          "name": "item",
+          "request": {
+            "type": "item",
+            "item": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "chromium_disconnectedNode"
+          }
+        },
+        {
+          "name": "items",
+          "request": {
+            "type": "items",
+            "start": {
+              "_arg": 0,
+              "type": "nullable:number"
+            },
+            "end": {
+              "_arg": 1,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "_retval": "chromium_disconnectedNode"
+          }
+        },
+        {
+          "name": "release",
+          "release": true,
+          "request": {
+            "type": "release"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_domtraversalarray": {
+      "category": "dict",
+      "typeName": "chromium_domtraversalarray",
+      "specializations": {
+        "nodes": "array:chromium_domnode"
+      }
+    },
+    "chromium_domwalker": {
+      "category": "actor",
+      "typeName": "chromium_domwalker",
+      "methods": [
+        {
+          "name": "document",
+          "request": {
+            "type": "document",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:chromium_domnode"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "chromium_domnode"
+            }
+          }
+        },
+        {
+          "name": "documentElement",
+          "request": {
+            "type": "documentElement",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:chromium_domnode"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "chromium_domnode"
+            }
+          }
+        },
+        {
+          "name": "parents",
+          "request": {
+            "type": "parents",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "sameDocument": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "nodes": {
+              "_retval": "array:chromium_domnode"
+            }
+          }
+        },
+        {
+          "name": "retainNode",
+          "request": {
+            "type": "retainNode",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "unretainNode",
+          "request": {
+            "type": "unretainNode",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "releaseNode",
+          "request": {
+            "type": "releaseNode",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "release",
+          "request": {
+            "type": "release"
+          },
+          "response": {}
+        },
+        {
+          "name": "children",
+          "request": {
+            "type": "children",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "maxNodes": {
+              "_option": 1,
+              "type": "number"
+            },
+            "center": {
+              "_option": 1,
+              "type": "chromium_domnode"
+            },
+            "start": {
+              "_option": 1,
+              "type": "chromium_domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "chromium_domtraversalarray"
+          }
+        },
+        {
+          "name": "siblings",
+          "request": {
+            "type": "siblings",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "maxNodes": {
+              "_option": 1,
+              "type": "number"
+            },
+            "center": {
+              "_option": 1,
+              "type": "chromium_domnode"
+            },
+            "start": {
+              "_option": 1,
+              "type": "chromium_domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "chromium_domtraversalarray"
+          }
+        },
+        {
+          "name": "nextSibling",
+          "request": {
+            "type": "nextSibling",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "nullable:chromium_domnode"
+            }
+          }
+        },
+        {
+          "name": "previousSibling",
+          "request": {
+            "type": "previousSibling",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "nullable:chromium_domnode"
+            }
+          }
+        },
+        {
+          "name": "querySelector",
+          "request": {
+            "type": "querySelector",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "selector": {
+              "_arg": 1,
+              "type": "nullable:string"
+            }
+          },
+          "response": {
+            "_retval": "chromium_disconnectedNode"
+          }
+        },
+        {
+          "name": "querySelectorAll",
+          "request": {
+            "type": "querySelectorAll",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "selector": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "list": {
+              "_retval": "chromium_domnodelist"
+            }
+          }
+        },
+        {
+          "name": "getSuggestionsForQuery",
+          "request": {
+            "type": "getSuggestionsForQuery",
+            "query": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "completing": {
+              "_arg": 1,
+              "type": "primitive"
+            },
+            "selectorState": {
+              "_arg": 2,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "list": {
+              "_retval": "array:array:string"
+            }
+          }
+        },
+        {
+          "name": "addPseudoClassLock",
+          "request": {
+            "type": "addPseudoClassLock",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "pseudoClass": {
+              "_arg": 1,
+              "type": "primitive"
+            },
+            "parents": {
+              "_option": 2,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "removePseudoClassLock",
+          "request": {
+            "type": "removePseudoClassLock",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "pseudoClass": {
+              "_arg": 1,
+              "type": "primitive"
+            },
+            "parents": {
+              "_option": 2,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "clearPseudoClassLocks",
+          "request": {
+            "type": "clearPseudoClassLocks",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "hideNode",
+          "request": {
+            "type": "hideNode",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "showNode",
+          "request": {
+            "type": "showNode",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "innerHTML",
+          "request": {
+            "type": "innerHTML",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "outerHTML",
+          "request": {
+            "type": "outerHTML",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "setOuterHTML",
+          "request": {
+            "type": "setOuterHTML",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "value": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "removeNode",
+          "request": {
+            "type": "removeNode",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "insertBefore",
+          "request": {
+            "type": "insertBefore",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "parent": {
+              "_arg": 1,
+              "type": "chromium_domnode"
+            },
+            "sibling": {
+              "_arg": 2,
+              "type": "nullable:chromium_domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "getMutations",
+          "request": {
+            "type": "getMutations",
+            "cleanup": {
+              "_option": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "mutations": {
+              "_retval": "array:chromium_dommutation"
+            }
+          }
+        },
+        {
+          "name": "isInDOMTree",
+          "request": {
+            "type": "isInDOMTree",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            }
+          },
+          "response": {
+            "attached": {
+              "_retval": "boolean"
+            }
+          }
+        },
+        {
+          "name": "getNodeActorFromObjectActor",
+          "request": {
+            "type": "getNodeActorFromObjectActor",
+            "objectActorID": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "nodeFront": {
+              "_retval": "nullable:chromium_disconnectedNode"
+            }
+          }
+        },
+        {
+          "name": "getStyleSheetOwnerNode",
+          "request": {
+            "type": "getStyleSheetOwnerNode",
+            "styleSheetActorID": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "ownerNode": {
+              "_retval": "nullable:chromium_disconnectedNode"
+            }
+          }
+        }
+      ],
+      "events": {
+        "new-mutations": {
+          "type": "newMutations"
+        },
+        "picker-node-picked": {
+          "type": "pickerNodePicked",
+          "node": {
+            "_arg": 0,
+            "type": "chromium_disconnectedNode"
+          }
+        }
+      }
+    },
+    "chromium_highlighter": {
+      "category": "actor",
+      "typeName": "chromium_highlighter",
+      "methods": [
+        {
+          "name": "showBoxModel",
+          "request": {
+            "type": "showBoxModel",
+            "node": {
+              "_arg": 0,
+              "type": "chromium_domnode"
+            },
+            "region": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "hideBoxModel",
+          "request": {
+            "type": "hideBoxModel"
+          },
+          "response": {}
+        },
+        {
+          "name": "pick",
+          "request": {
+            "type": "pick"
+          },
+          "response": {}
+        },
+        {
+          "name": "cancelPick",
+          "request": {
+            "type": "cancelPick"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_inspector": {
+      "category": "actor",
+      "typeName": "chromium_inspector",
+      "methods": [
+        {
+          "name": "getWalker",
+          "request": {
+            "type": "getWalker"
+          },
+          "response": {
+            "walker": {
+              "_retval": "chromium_domwalker"
+            }
+          }
+        },
+        {
+          "name": "getPageStyle",
+          "request": {
+            "type": "getPageStyle"
+          },
+          "response": {
+            "pageStyle": {
+              "_retval": "chromium_pagestyle"
+            }
+          }
+        },
+        {
+          "name": "getHighlighter",
+          "request": {
+            "type": "getHighlighter",
+            "autohide": {
+              "_arg": 0,
+              "type": "boolean"
+            }
+          },
+          "response": {
+            "highligter": {
+              "_retval": "chromium_highlighter"
+            }
+          }
+        },
+        {
+          "name": "getImageDataFromURL",
+          "request": {
+            "type": "getImageDataFromURL",
+            "url": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "maxDim": {
+              "_arg": 1,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "_retval": "chromium_imageData"
+          }
+        }
+      ],
+      "events": {}
+    },
+    "chromium_reflow": {
+      "category": "actor",
+      "typeName": "chromium_reflow",
+      "methods": [
+        {
+          "name": "start",
+          "oneway": true,
+          "request": {
+            "type": "start"
+          },
+          "response": {}
+        },
+        {
+          "name": "stop",
+          "oneway": true,
+          "request": {
+            "type": "stop"
+          },
+          "response": {}
+        }
+      ],
+      "events": {
+        "reflows": {
+          "type": "reflows",
+          "reflows": {
+            "_arg": 0,
+            "type": "array:json"
+          }
+        }
+      }
+    },
+    "chromium_pauseactor": {
+      "category": "actor",
+      "typeName": "chromium_pauseactor",
+      "methods": [],
+      "events": {}
+    },
+    "chromium_breakpoint": {
+      "category": "actor",
+      "typeName": "chromium_breakpoint",
+      "methods": [
+        {
+          "name": "delete",
+          "release": true,
+          "request": {
+            "type": "delete"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_environment": {
+      "category": "actor",
+      "typeName": "chromium_environment",
+      "methods": [],
+      "events": {}
+    },
+    "chromium_frame": {
+      "category": "actor",
+      "typeName": "chromium_frame",
+      "methods": [],
+      "events": {}
+    },
+    "chromium_source": {
+      "category": "actor",
+      "typeName": "chromium_source",
+      "methods": [
+        {
+          "name": "source",
+          "request": {
+            "type": "source"
+          },
+          "response": {
+            "source": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "blackbox",
+          "request": {
+            "type": "blackbox"
+          },
+          "response": {}
+        },
+        {
+          "name": "unblackbox",
+          "request": {
+            "type": "unblackbox"
+          },
+          "response": {}
+        },
+        {
+          "name": "prettyPrint",
+          "request": {
+            "type": "prettyPrint"
+          },
+          "response": {}
+        },
+        {
+          "name": "disablePrettyPrint",
+          "request": {
+            "type": "disablePrettyPrint"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "chromium_setBreakpointResponse": {
+      "category": "dict",
+      "typeName": "chromium_setBreakpointResponse",
+      "specializations": {
+        "actor": "chromium_breakpoint#actorid",
+        "actualLocation": "nullable:json"
+      }
+    },
+    "chromium_thread": {
+      "category": "actor",
+      "typeName": "chromium_thread",
+      "methods": [
+        {
+          "name": "reconfigure",
+          "request": {
+            "type": "reconfigure",
+            "options": {
+              "_arg": 0,
+              "type": "json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "attach",
+          "oneway": true,
+          "request": {
+            "type": "attach",
+            "useSourceMaps": {
+              "_option": 0,
+              "type": "boolean"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "interrupt",
+          "oneway": true,
+          "request": {
+            "type": "interrupt"
+          },
+          "response": {}
+        },
+        {
+          "name": "resume",
+          "oneway": true,
+          "request": {
+            "type": "resume",
+            "forceCompletion": {
+              "_option": 0,
+              "type": "json"
+            },
+            "resumeLimit": {
+              "_option": 0,
+              "type": "json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "sources",
+          "request": {
+            "type": "sources"
+          },
+          "response": {
+            "sources": {
+              "_retval": "array:chromium_source"
+            }
+          }
+        },
+        {
+          "name": "frames",
+          "request": {
+            "type": "frames",
+            "start": {
+              "_arg": 0,
+              "type": "number"
+            },
+            "count": {
+              "_arg": 1,
+              "type": "number"
+            }
+          },
+          "response": {
+            "frames": {
+              "_retval": "array:chromium_frame"
+            }
+          }
+        },
+        {
+          "name": "setBreakpoint",
+          "request": {
+            "type": "setBreakpoint",
+            "location": {
+              "_arg": 0,
+              "type": "json"
+            },
+            "condition": {
+              "_arg": 1,
+              "type": "nullable:string"
+            }
+          },
+          "response": {
+            "_retval": "chromium_setBreakpointResponse"
+          }
+        }
+      ],
+      "events": {
+        "exited": {
+          "type": "exited"
+        },
+        "paused": {
+          "type": "paused",
+          "actor": {
+            "_option": 0,
+            "type": "chromium_pauseactor"
+          },
+          "why": {
+            "_option": 0,
+            "type": "string"
+          },
+          "frame": {
+            "_option": 0,
+            "type": "chromium_frame"
+          },
+          "poppedFrames": {
+            "_option": 0,
+            "type": "array:string"
+          }
+        },
+        "resumed": {
+          "type": "resumed"
+        },
+        "new-source": {
+          "type": "newSource",
+          "source": {
+            "_arg": 0,
+            "type": "chromium_source"
+          }
+        }
+      }
+    },
+    "chromium_tablist": {
+      "category": "dict",
+      "typeName": "chromium_tablist",
+      "specializations": {
+        "selected": "number",
+        "tabs": "array:chromium_tab"
+      }
+    },
+    "chromium_root": {
+      "category": "actor",
+      "typeName": "chromium_root",
+      "methods": [
+        {
+          "name": "listTabs",
+          "request": {
+            "type": "listTabs"
+          },
+          "response": {
+            "_retval": "chromium_tablist"
+          }
+        },
+        {
+          "name": "protocolDescription",
+          "request": {
+            "type": "protocolDescription"
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "echo",
+          "request": {
+            "type": "echo",
+            "string": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "string": {
+              "_retval": "string"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "chromium_tab": {
+      "category": "actor",
+      "typeName": "chromium_tab",
+      "methods": [
+        {
+          "name": "attach",
+          "request": {
+            "type": "attach"
+          },
+          "response": {
+            "type": "tabAttached",
+            "threadActor": {
+              "_retval": "chromium_thread#actorid"
+            }
+          }
+        },
+        {
+          "name": "navigateTo",
+          "request": {
+            "type": "navigateTo",
+            "url": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "reload",
+          "request": {
+            "type": "reload",
+            "options": {
+              "_arg": 0,
+              "type": "nullable:json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "reconfigure",
+          "request": {
+            "type": "reconfigure",
+            "options": {
+              "_arg": 0,
+              "type": "nullable:json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "detach",
+          "request": {
+            "type": "detach"
+          },
+          "response": {}
+        }
+      ],
+      "events": {
+        "tab-navigated": {
+          "type": "tabNavigated",
+          "url": {
+            "_arg": 0,
+            "type": "string"
+          },
+          "state": {
+            "_arg": 1,
+            "type": "string"
+          },
+          "nativeConsoleAPI": true
+        }
+      }
+    },
+    "device": {
+      "category": "actor",
+      "typeName": "device",
+      "methods": [
+        {
+          "name": "getDescription",
+          "request": {
+            "type": "getDescription"
+          },
+          "response": {
+            "value": {
+              "_retval": "json"
+            }
+          }
+        },
+        {
+          "name": "getWallpaper",
+          "request": {
+            "type": "getWallpaper"
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "screenshotToDataURL",
+          "request": {
+            "type": "screenshotToDataURL"
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "getRawPermissionsTable",
+          "request": {
+            "type": "getRawPermissionsTable"
+          },
+          "response": {
+            "value": {
+              "_retval": "json"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "preference": {
+      "category": "actor",
+      "typeName": "preference",
+      "methods": [
+        {
+          "name": "getBoolPref",
+          "request": {
+            "type": "getBoolPref",
+            "value": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "boolean"
+            }
+          }
+        },
+        {
+          "name": "getCharPref",
+          "request": {
+            "type": "getCharPref",
+            "value": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "string"
+            }
+          }
+        },
+        {
+          "name": "getIntPref",
+          "request": {
+            "type": "getIntPref",
+            "value": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "number"
+            }
+          }
+        },
+        {
+          "name": "getAllPrefs",
+          "request": {
+            "type": "getAllPrefs"
+          },
+          "response": {
+            "value": {
+              "_retval": "json"
+            }
+          }
+        },
+        {
+          "name": "setBoolPref",
+          "request": {
+            "type": "setBoolPref",
+            "name": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "value": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "setCharPref",
+          "request": {
+            "type": "setCharPref",
+            "name": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "value": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "setIntPref",
+          "request": {
+            "type": "setIntPref",
+            "name": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "value": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "clearUserPref",
+          "request": {
+            "type": "clearUserPref",
+            "name": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "cssUsage": {
+      "category": "actor",
+      "typeName": "cssUsage",
+      "methods": [
+        {
+          "name": "start",
+          "request": {
+            "type": "start",
+            "url": {
+              "_arg": 0,
+              "type": "boolean"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "stop",
+          "request": {
+            "type": "stop"
+          },
+          "response": {}
+        },
+        {
+          "name": "toggle",
+          "request": {
+            "type": "toggle"
+          },
+          "response": {}
+        },
+        {
+          "name": "oneshot",
+          "request": {
+            "type": "oneshot"
+          },
+          "response": {}
+        },
+        {
+          "name": "createEditorReport",
+          "request": {
+            "type": "createEditorReport",
+            "url": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "reports": {
+              "_retval": "array:json"
+            }
+          }
+        },
+        {
+          "name": "createPageReport",
+          "request": {
+            "type": "createPageReport"
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "_testOnly_visitedPages",
+          "request": {
+            "type": "_testOnly_visitedPages"
+          },
+          "response": {
+            "value": {
+              "_retval": "array:string"
+            }
+          }
+        }
+      ],
+      "events": {
+        "state-change": {
+          "type": "stateChange",
+          "stateChange": {
+            "_arg": 0,
+            "type": "json"
+          }
+        }
+      }
+    },
+    "stylesheet": {
+      "category": "actor",
+      "typeName": "stylesheet",
+      "methods": [
+        {
+          "name": "toggleDisabled",
+          "request": {
+            "type": "toggleDisabled"
+          },
+          "response": {
+            "disabled": {
+              "_retval": "boolean"
+            }
+          }
+        },
+        {
+          "name": "getText",
+          "request": {
+            "type": "getText"
+          },
+          "response": {
+            "text": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "getOriginalSources",
+          "request": {
+            "type": "getOriginalSources"
+          },
+          "response": {
+            "originalSources": {
+              "_retval": "nullable:array:originalsource"
+            }
+          }
+        },
+        {
+          "name": "getOriginalLocation",
+          "request": {
+            "type": "getOriginalLocation",
+            "line": {
+              "_arg": 0,
+              "type": "number"
+            },
+            "column": {
+              "_arg": 1,
+              "type": "number"
+            }
+          },
+          "response": {
+            "_retval": "originallocationresponse"
+          }
+        },
+        {
+          "name": "getMediaRules",
+          "request": {
+            "type": "getMediaRules"
+          },
+          "response": {
+            "mediaRules": {
+              "_retval": "nullable:array:mediarule"
+            }
+          }
+        },
+        {
+          "name": "update",
+          "request": {
+            "type": "update",
+            "text": {
+              "_arg": 0,
+              "type": "string"
+            },
+            "transition": {
+              "_arg": 1,
+              "type": "boolean"
+            }
+          },
+          "response": {}
+        }
+      ],
+      "events": {
+        "property-change": {
+          "type": "propertyChange",
+          "property": {
+            "_arg": 0,
+            "type": "string"
+          },
+          "value": {
+            "_arg": 1,
+            "type": "json"
+          }
+        },
+        "style-applied": {
+          "type": "styleApplied"
+        },
+        "media-rules-changed": {
+          "type": "mediaRulesChanged",
+          "rules": {
+            "_arg": 0,
+            "type": "array:mediarule"
+          }
+        }
+      }
+    },
+    "originalsource": {
+      "category": "actor",
+      "typeName": "originalsource",
+      "methods": [
+        {
+          "name": "getText",
+          "request": {
+            "type": "getText"
+          },
+          "response": {
+            "text": {
+              "_retval": "longstring"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "stylesheets": {
+      "category": "actor",
+      "typeName": "stylesheets",
+      "methods": [
+        {
+          "name": "getStyleSheets",
+          "request": {
+            "type": "getStyleSheets"
+          },
+          "response": {
+            "styleSheets": {
+              "_retval": "array:stylesheet"
+            }
+          }
+        },
+        {
+          "name": "addStyleSheet",
+          "request": {
+            "type": "addStyleSheet",
+            "text": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "styleSheet": {
+              "_retval": "stylesheet"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "mediarule": {
+      "category": "actor",
+      "typeName": "mediarule",
+      "methods": [],
+      "events": {
+        "matches-change": {
+          "type": "matchesChange",
+          "matches": {
+            "_arg": 0,
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "originallocationresponse": {
+      "category": "dict",
+      "typeName": "originallocationresponse",
+      "specializations": {
+        "source": "string",
+        "line": "number",
+        "column": "number"
+      }
+    },
+    "domnode": {
+      "category": "actor",
+      "typeName": "domnode",
+      "methods": [
+        {
+          "name": "getNodeValue",
+          "request": {
+            "type": "getNodeValue"
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "setNodeValue",
+          "request": {
+            "type": "setNodeValue",
+            "value": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "getImageData",
+          "request": {
+            "type": "getImageData",
+            "maxDim": {
+              "_arg": 0,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "_retval": "imageData"
+          }
+        },
+        {
+          "name": "getEventListenerInfo",
+          "request": {
+            "type": "getEventListenerInfo"
+          },
+          "response": {
+            "events": {
+              "_retval": "json"
+            }
+          }
+        },
+        {
+          "name": "modifyAttributes",
+          "request": {
+            "type": "modifyAttributes",
+            "modifications": {
+              "_arg": 0,
+              "type": "array:json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "getFontFamilyDataURL",
+          "request": {
+            "type": "getFontFamilyDataURL",
+            "font": {
+              "_arg": 0,
+              "type": "string"
+            },
+            "fillStyle": {
+              "_arg": 1,
+              "type": "nullable:string"
+            }
+          },
+          "response": {
+            "_retval": "imageData"
+          }
+        }
+      ],
+      "events": {}
+    },
+    "domstylerule": {
+      "category": "actor",
+      "typeName": "domstylerule",
+      "methods": [
+        {
+          "name": "modifyProperties",
+          "request": {
+            "type": "modifyProperties",
+            "modifications": {
+              "_arg": 0,
+              "type": "array:json"
+            }
+          },
+          "response": {
+            "rule": {
+              "_retval": "domstylerule"
+            }
+          }
+        },
+        {
+          "name": "modifySelector",
+          "request": {
+            "type": "modifySelector",
+            "selector": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "isModified": {
+              "_retval": "boolean"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "appliedstyle": {
+      "category": "dict",
+      "typeName": "appliedstyle",
+      "specializations": {
+        "rule": "domstylerule#actorid",
+        "inherited": "nullable:domnode#actorid",
+        "keyframes": "nullable:domstylerule#actorid"
+      }
+    },
+    "matchedselector": {
+      "category": "dict",
+      "typeName": "matchedselector",
+      "specializations": {
+        "rule": "domstylerule#actorid",
+        "selector": "string",
+        "value": "string",
+        "status": "number"
+      }
+    },
+    "appliedStylesReturn": {
+      "category": "dict",
+      "typeName": "appliedStylesReturn",
+      "specializations": {
+        "entries": "array:appliedstyle",
+        "rules": "array:domstylerule",
+        "sheets": "array:stylesheet"
+      }
+    },
+    "matchedselectorresponse": {
+      "category": "dict",
+      "typeName": "matchedselectorresponse",
+      "specializations": {
+        "rules": "array:domstylerule",
+        "sheets": "array:stylesheet",
+        "matched": "array:matchedselector"
+      }
+    },
+    "pagestyle": {
+      "category": "actor",
+      "typeName": "pagestyle",
+      "methods": [
+        {
+          "name": "getComputed",
+          "request": {
+            "type": "getComputed",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "markMatched": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "onlyMatched": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "filter": {
+              "_option": 1,
+              "type": "string"
+            }
+          },
+          "response": {
+            "computed": {
+              "_retval": "json"
+            }
+          }
+        },
+        {
+          "name": "getMatchedSelectors",
+          "request": {
+            "type": "getMatchedSelectors",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "property": {
+              "_arg": 1,
+              "type": "string"
+            },
+            "filter": {
+              "_option": 2,
+              "type": "string"
+            }
+          },
+          "response": {
+            "_retval": "matchedselectorresponse"
+          }
+        },
+        {
+          "name": "getApplied",
+          "request": {
+            "type": "getApplied",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "inherited": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "matchedSelectors": {
+              "_option": 1,
+              "type": "boolean"
+            },
+            "filter": {
+              "_option": 1,
+              "type": "string"
+            }
+          },
+          "response": {
+            "_retval": "appliedStylesReturn"
+          }
+        },
+        {
+          "name": "getLayout",
+          "request": {
+            "type": "getLayout",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "autoMargins": {
+              "_option": 1,
+              "type": "boolean"
+            }
+          },
+          "response": {
+            "_retval": "json"
+          }
+        },
+        {
+          "name": "addNewRule",
+          "request": {
+            "type": "addNewRule",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {
+            "_retval": "appliedStylesReturn"
+          }
+        }
+      ],
+      "events": {}
+    },
+    "highlighter": {
+      "category": "actor",
+      "typeName": "highlighter",
+      "methods": [
+        {
+          "name": "showBoxModel",
+          "request": {
+            "type": "showBoxModel",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "region": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "hideBoxModel",
+          "request": {
+            "type": "hideBoxModel"
+          },
+          "response": {}
+        },
+        {
+          "name": "pick",
+          "request": {
+            "type": "pick"
+          },
+          "response": {}
+        },
+        {
+          "name": "cancelPick",
+          "request": {
+            "type": "cancelPick"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "customhighlighter": {
+      "category": "actor",
+      "typeName": "customhighlighter",
+      "methods": [
+        {
+          "name": "show",
+          "request": {
+            "type": "show",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "options": {
+              "_arg": 1,
+              "type": "nullable:json"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "hide",
+          "request": {
+            "type": "hide"
+          },
+          "response": {}
+        },
+        {
+          "name": "finalize",
+          "oneway": true,
+          "request": {
+            "type": "finalize"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "reflow": {
+      "category": "actor",
+      "typeName": "reflow",
+      "methods": [
+        {
+          "name": "start",
+          "oneway": true,
+          "request": {
+            "type": "start"
+          },
+          "response": {}
+        },
+        {
+          "name": "stop",
+          "oneway": true,
+          "request": {
+            "type": "stop"
+          },
+          "response": {}
+        }
+      ],
+      "events": {
+        "reflows": {
+          "type": "reflows",
+          "reflows": {
+            "_arg": 0,
+            "type": "array:json"
+          }
+        }
+      }
+    },
+    "imageData": {
+      "category": "dict",
+      "typeName": "imageData",
+      "specializations": {
+        "data": "nullable:longstring",
+        "size": "json"
+      }
+    },
+    "disconnectedNode": {
+      "category": "dict",
+      "typeName": "disconnectedNode",
+      "specializations": {
+        "node": "domnode",
+        "newParents": "array:domnode"
+      }
+    },
+    "disconnectedNodeArray": {
+      "category": "dict",
+      "typeName": "disconnectedNodeArray",
+      "specializations": {
+        "nodes": "array:domnode",
+        "newParents": "array:domnode"
+      }
+    },
+    "dommutation": {
+      "category": "dict",
+      "typeName": "dommutation",
+      "specializations": {}
+    },
+    "domnodelist": {
+      "category": "actor",
+      "typeName": "domnodelist",
+      "methods": [
+        {
+          "name": "item",
+          "request": {
+            "type": "item",
+            "item": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "disconnectedNode"
+          }
+        },
+        {
+          "name": "items",
+          "request": {
+            "type": "items",
+            "start": {
+              "_arg": 0,
+              "type": "nullable:number"
+            },
+            "end": {
+              "_arg": 1,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "_retval": "disconnectedNodeArray"
+          }
+        },
+        {
+          "name": "release",
+          "release": true,
+          "request": {
+            "type": "release"
+          },
+          "response": {}
+        }
+      ],
+      "events": {}
+    },
+    "domtraversalarray": {
+      "category": "dict",
+      "typeName": "domtraversalarray",
+      "specializations": {
+        "nodes": "array:domnode"
+      }
+    },
+    "domwalker": {
+      "category": "actor",
+      "typeName": "domwalker",
+      "methods": [
+        {
+          "name": "release",
+          "release": true,
+          "request": {
+            "type": "release"
+          },
+          "response": {}
+        },
+        {
+          "name": "pick",
+          "request": {
+            "type": "pick"
+          },
+          "response": {
+            "_retval": "disconnectedNode"
+          }
+        },
+        {
+          "name": "cancelPick",
+          "request": {
+            "type": "cancelPick"
+          },
+          "response": {}
+        },
+        {
+          "name": "highlight",
+          "request": {
+            "type": "highlight",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "document",
+          "request": {
+            "type": "document",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:domnode"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "domnode"
+            }
+          }
+        },
+        {
+          "name": "documentElement",
+          "request": {
+            "type": "documentElement",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:domnode"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "domnode"
+            }
+          }
+        },
+        {
+          "name": "parents",
+          "request": {
+            "type": "parents",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "sameDocument": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "nodes": {
+              "_retval": "array:domnode"
+            }
+          }
+        },
+        {
+          "name": "retainNode",
+          "request": {
+            "type": "retainNode",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "unretainNode",
+          "request": {
+            "type": "unretainNode",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "releaseNode",
+          "request": {
+            "type": "releaseNode",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "force": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "children",
+          "request": {
+            "type": "children",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "maxNodes": {
+              "_option": 1,
+              "type": "primitive"
+            },
+            "center": {
+              "_option": 1,
+              "type": "domnode"
+            },
+            "start": {
+              "_option": 1,
+              "type": "domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "domtraversalarray"
+          }
+        },
+        {
+          "name": "siblings",
+          "request": {
+            "type": "siblings",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "maxNodes": {
+              "_option": 1,
+              "type": "primitive"
+            },
+            "center": {
+              "_option": 1,
+              "type": "domnode"
+            },
+            "start": {
+              "_option": 1,
+              "type": "domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "domtraversalarray"
+          }
+        },
+        {
+          "name": "nextSibling",
+          "request": {
+            "type": "nextSibling",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "nullable:domnode"
+            }
+          }
+        },
+        {
+          "name": "previousSibling",
+          "request": {
+            "type": "previousSibling",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "whatToShow": {
+              "_option": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "node": {
+              "_retval": "nullable:domnode"
+            }
+          }
+        },
+        {
+          "name": "querySelector",
+          "request": {
+            "type": "querySelector",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "selector": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "_retval": "disconnectedNode"
+          }
+        },
+        {
+          "name": "querySelectorAll",
+          "request": {
+            "type": "querySelectorAll",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "selector": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "list": {
+              "_retval": "domnodelist"
+            }
+          }
+        },
+        {
+          "name": "getSuggestionsForQuery",
+          "request": {
+            "type": "getSuggestionsForQuery",
+            "query": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "completing": {
+              "_arg": 1,
+              "type": "primitive"
+            },
+            "selectorState": {
+              "_arg": 2,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "list": {
+              "_retval": "array:array:string"
+            }
+          }
+        },
+        {
+          "name": "addPseudoClassLock",
+          "request": {
+            "type": "addPseudoClassLock",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "pseudoClass": {
+              "_arg": 1,
+              "type": "primitive"
+            },
+            "parents": {
+              "_option": 2,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "hideNode",
+          "request": {
+            "type": "hideNode",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "unhideNode",
+          "request": {
+            "type": "unhideNode",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "removePseudoClassLock",
+          "request": {
+            "type": "removePseudoClassLock",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "pseudoClass": {
+              "_arg": 1,
+              "type": "primitive"
+            },
+            "parents": {
+              "_option": 2,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "clearPseudoClassLocks",
+          "request": {
+            "type": "clearPseudoClassLocks",
+            "node": {
+              "_arg": 0,
+              "type": "nullable:domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "innerHTML",
+          "request": {
+            "type": "innerHTML",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "outerHTML",
+          "request": {
+            "type": "outerHTML",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {
+            "value": {
+              "_retval": "longstring"
+            }
+          }
+        },
+        {
+          "name": "setOuterHTML",
+          "request": {
+            "type": "setOuterHTML",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "value": {
+              "_arg": 1,
+              "type": "primitive"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "removeNode",
+          "request": {
+            "type": "removeNode",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {
+            "nextSibling": {
+              "_retval": "nullable:domnode"
+            }
+          }
+        },
+        {
+          "name": "insertBefore",
+          "request": {
+            "type": "insertBefore",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            },
+            "parent": {
+              "_arg": 1,
+              "type": "domnode"
+            },
+            "sibling": {
+              "_arg": 2,
+              "type": "nullable:domnode"
+            }
+          },
+          "response": {}
+        },
+        {
+          "name": "getMutations",
+          "request": {
+            "type": "getMutations",
+            "cleanup": {
+              "_option": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "mutations": {
+              "_retval": "array:dommutation"
+            }
+          }
+        },
+        {
+          "name": "isInDOMTree",
+          "request": {
+            "type": "isInDOMTree",
+            "node": {
+              "_arg": 0,
+              "type": "domnode"
+            }
+          },
+          "response": {
+            "attached": {
+              "_retval": "boolean"
+            }
+          }
+        },
+        {
+          "name": "getNodeActorFromObjectActor",
+          "request": {
+            "type": "getNodeActorFromObjectActor",
+            "objectActorID": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "nodeFront": {
+              "_retval": "nullable:disconnectedNode"
+            }
+          }
+        },
+        {
+          "name": "getStyleSheetOwnerNode",
+          "request": {
+            "type": "getStyleSheetOwnerNode",
+            "styleSheetActorID": {
+              "_arg": 0,
+              "type": "string"
+            }
+          },
+          "response": {
+            "ownerNode": {
+              "_retval": "nullable:disconnectedNode"
+            }
+          }
+        }
+      ],
+      "events": {
+        "new-mutations": {
+          "type": "newMutations"
+        },
+        "picker-node-picked": {
+          "type": "pickerNodePicked",
+          "node": {
+            "_arg": 0,
+            "type": "disconnectedNode"
+          }
+        },
+        "picker-node-hovered": {
+          "type": "pickerNodeHovered",
+          "node": {
+            "_arg": 0,
+            "type": "disconnectedNode"
+          }
+        },
+        "highlighter-ready": {
+          "type": "highlighter-ready"
+        },
+        "highlighter-hide": {
+          "type": "highlighter-hide"
+        },
+        "display-change": {
+          "type": "display-change",
+          "nodes": {
+            "_arg": 0,
+            "type": "array:domnode"
+          }
+        }
+      }
+    },
+    "inspector": {
+      "category": "actor",
+      "typeName": "inspector",
+      "methods": [
+        {
+          "name": "getWalker",
+          "request": {
+            "type": "getWalker"
+          },
+          "response": {
+            "walker": {
+              "_retval": "domwalker"
+            }
+          }
+        },
+        {
+          "name": "getPageStyle",
+          "request": {
+            "type": "getPageStyle"
+          },
+          "response": {
+            "pageStyle": {
+              "_retval": "pagestyle"
+            }
+          }
+        },
+        {
+          "name": "getHighlighter",
+          "request": {
+            "type": "getHighlighter",
+            "autohide": {
+              "_arg": 0,
+              "type": "boolean"
+            }
+          },
+          "response": {
+            "highligter": {
+              "_retval": "highlighter"
+            }
+          }
+        },
+        {
+          "name": "getHighlighterByType",
+          "request": {
+            "type": "getHighlighterByType",
+            "typeName": {
+              "_arg": 0,
+              "type": "primitive"
+            }
+          },
+          "response": {
+            "highlighter": {
+              "_retval": "nullable:customhighlighter"
+            }
+          }
+        },
+        {
+          "name": "getImageDataFromURL",
+          "request": {
+            "type": "getImageDataFromURL",
+            "url": {
+              "_arg": 0,
+              "type": "primitive"
+            },
+            "maxDim": {
+              "_arg": 1,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "_retval": "imageData"
+          }
+        }
+      ],
+      "events": {}
+    },
+    "framerate": {
+      "category": "actor",
+      "typeName": "framerate",
+      "methods": [
+        {
+          "name": "startRecording",
+          "request": {
+            "type": "startRecording"
+          },
+          "response": {}
+        },
+        {
+          "name": "stopRecording",
+          "request": {
+            "type": "stopRecording",
+            "beginAt": {
+              "_arg": 0,
+              "type": "nullable:number"
+            },
+            "endAt": {
+              "_arg": 1,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "ticks": {
+              "_retval": "array:number"
+            }
+          }
+        },
+        {
+          "name": "cancelRecording",
+          "request": {
+            "type": "cancelRecording"
+          },
+          "response": {}
+        },
+        {
+          "name": "isRecording",
+          "request": {
+            "type": "isRecording"
+          },
+          "response": {
+            "recording": {
+              "_retval": "boolean"
+            }
+          }
+        },
+        {
+          "name": "getPendingTicks",
+          "request": {
+            "type": "getPendingTicks",
+            "beginAt": {
+              "_arg": 0,
+              "type": "nullable:number"
+            },
+            "endAt": {
+              "_arg": 1,
+              "type": "nullable:number"
+            }
+          },
+          "response": {
+            "ticks": {
+              "_retval": "array:number"
+            }
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "from": "root"
+}
