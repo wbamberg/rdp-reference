@@ -59,6 +59,9 @@ layout: default
 
 </table>
 
+#### Response ####
+json
+
 ### echo ###
 
 <table>

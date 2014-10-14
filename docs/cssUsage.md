@@ -115,6 +115,9 @@ array:json
 
 </table>
 
+#### Response ####
+json
+
 ### _testOnly_visitedPages ###
 
 <table>

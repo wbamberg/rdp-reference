@@ -27,6 +27,9 @@ layout: default
 
 </table>
 
+#### Response ####
+json
+
 ### stopListeners ###
 
 <table>
@@ -47,6 +50,9 @@ layout: default
 </tr>
 
 </table>
+
+#### Response ####
+json
 
 ### getCachedMessages ###
 
@@ -150,6 +156,9 @@ array:chromium_consolemsg
 </tr>
 
 </table>
+
+#### Response ####
+json
 
 ### getPreferences ###
 

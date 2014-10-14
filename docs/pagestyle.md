@@ -190,6 +190,9 @@ json
 
 </table>
 
+#### Response ####
+json
+
 ### addNewRule ###
 
 <table>
