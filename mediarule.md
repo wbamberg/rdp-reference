@@ -1,4 +1,0 @@
-
-# mediarule #
-
-## Messages ##
