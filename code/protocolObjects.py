@@ -64,8 +64,27 @@ def writeMessages(messages, actorName, output, dicts):
                         md.writeTableRow([responseItemName, response[responseItemName]], output)
                 md.writeTableEnd(output)
 
+def writeEvents(events, actorName, output, dicts):
+    md.writeH2("Events", output)
+    for event in events:
+        md.writeH3(event, output)
+
+        md.writeTableStart(output)
+        md.writeTableRow(["from", actorName], output)
+        md.writeTableRow(["type", events[event]["type"]], output)
+        for param in events[event]:
+            if param != "type":
+                if isinstance(events[event][param], dict):
+                    md.writeTableRow([param, events[event][param]["type"]], output)
+                else:
+                    md.writeTableRow([param, str(events[event][param])], output)
+        md.writeTableEnd(output)
+
+
 def writeActor(actor, dicts):
     actorName = actor["typeName"]
     output = md.createFile("../docs/" + actorName + ".md")
     md.writeH1(actorName, output)
     writeMessages(actor["methods"], actorName, output, dicts)
+    writeEvents(actor["events"], actorName, output, dicts)
+
