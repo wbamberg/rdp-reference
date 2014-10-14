@@ -1,3 +1,8 @@
+def createFile(name):
+    f = open(name, "w")
+    f.write("---\nlayout: default\n---\n")
+    return f
+
 def writeFront(output):
     output.write("---\n---\n")
 
