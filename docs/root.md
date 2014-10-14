@@ -98,5 +98,3 @@ json
 </tr>
 
 </table>
-
-## Events ##

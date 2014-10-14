@@ -16,7 +16,8 @@ def getDictionary(typeName, dicts):
     return None
 
 def writeMessages(messages, actorName, output, dicts):
-    md.writeH2("Messages", output)
+    if messages:
+        md.writeH2("Messages", output)
     for message in messages:
         md.writeH3(message["name"], output)
 
@@ -65,7 +66,8 @@ def writeMessages(messages, actorName, output, dicts):
                 md.writeTableEnd(output)
 
 def writeEvents(events, actorName, output, dicts):
-    md.writeH2("Events", output)
+    if events:
+        md.writeH2("Events", output)
     for event in events:
         md.writeH3(event, output)
 

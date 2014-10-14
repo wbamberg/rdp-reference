@@ -252,5 +252,3 @@ json
 </tr>
 
 </table>
-
-## Events ##

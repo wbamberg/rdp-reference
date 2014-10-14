@@ -4,8 +4,6 @@ layout: default
 
 # mediarule #
 
-## Messages ##
-
 ## Events ##
 
 ### matches-change ###
