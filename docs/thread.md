@@ -107,7 +107,20 @@ layout: default
 </table>
 
 #### Response ####
-array:chromium_source
+
+<table>
+
+<tr>
+<td>from</td>
+<td>thread</td>
+</tr>
+
+<tr>
+<td>sources</td>
+<td>array:chromium_source</td>
+</tr>
+
+</table>
 
 ### frames ###
 
@@ -136,7 +149,20 @@ array:chromium_source
 </table>
 
 #### Response ####
-array:chromium_frame
+
+<table>
+
+<tr>
+<td>from</td>
+<td>thread</td>
+</tr>
+
+<tr>
+<td>frames</td>
+<td>array:chromium_frame</td>
+</tr>
+
+</table>
 
 ### setBreakpoint ###
 

@@ -28,7 +28,20 @@ layout: default
 </table>
 
 #### Response ####
-domstylerule
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domstylerule</td>
+</tr>
+
+<tr>
+<td>rule</td>
+<td>domstylerule</td>
+</tr>
+
+</table>
 
 ### modifySelector ###
 
@@ -52,4 +65,17 @@ domstylerule
 </table>
 
 #### Response ####
-boolean
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domstylerule</td>
+</tr>
+
+<tr>
+<td>isModified</td>
+<td>boolean</td>
+</tr>
+
+</table>

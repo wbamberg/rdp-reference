@@ -118,7 +118,20 @@ layout: default
 </table>
 
 #### Response ####
-domnode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>domnode</td>
+</tr>
+
+</table>
 
 ### documentElement ###
 
@@ -142,7 +155,20 @@ domnode
 </table>
 
 #### Response ####
-domnode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>domnode</td>
+</tr>
+
+</table>
 
 ### parents ###
 
@@ -171,7 +197,20 @@ domnode
 </table>
 
 #### Response ####
-array:domnode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>nodes</td>
+<td>array:domnode</td>
+</tr>
+
+</table>
 
 ### retainNode ###
 
@@ -382,7 +421,20 @@ array:domnode
 </table>
 
 #### Response ####
-nullable:domnode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>nullable:domnode</td>
+</tr>
+
+</table>
 
 ### previousSibling ###
 
@@ -411,7 +463,20 @@ nullable:domnode
 </table>
 
 #### Response ####
-nullable:domnode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>nullable:domnode</td>
+</tr>
+
+</table>
 
 ### querySelector ###
 
@@ -487,7 +552,20 @@ nullable:domnode
 </table>
 
 #### Response ####
-domnodelist
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>list</td>
+<td>domnodelist</td>
+</tr>
+
+</table>
 
 ### getSuggestionsForQuery ###
 
@@ -521,7 +599,20 @@ domnodelist
 </table>
 
 #### Response ####
-array:array:string
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>list</td>
+<td>array:array:string</td>
+</tr>
+
+</table>
 
 ### addPseudoClassLock ###
 
@@ -670,7 +761,20 @@ array:array:string
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### outerHTML ###
 
@@ -694,7 +798,20 @@ longstring
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### setOuterHTML ###
 
@@ -744,7 +861,20 @@ longstring
 </table>
 
 #### Response ####
-nullable:domnode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>nextSibling</td>
+<td>nullable:domnode</td>
+</tr>
+
+</table>
 
 ### insertBefore ###
 
@@ -799,7 +929,20 @@ nullable:domnode
 </table>
 
 #### Response ####
-array:dommutation
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>mutations</td>
+<td>array:dommutation</td>
+</tr>
+
+</table>
 
 ### isInDOMTree ###
 
@@ -823,7 +966,20 @@ array:dommutation
 </table>
 
 #### Response ####
-boolean
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>attached</td>
+<td>boolean</td>
+</tr>
+
+</table>
 
 ### getNodeActorFromObjectActor ###
 
@@ -847,7 +1003,20 @@ boolean
 </table>
 
 #### Response ####
-nullable:disconnectedNode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>nodeFront</td>
+<td>nullable:disconnectedNode</td>
+</tr>
+
+</table>
 
 ### getStyleSheetOwnerNode ###
 
@@ -871,4 +1040,17 @@ nullable:disconnectedNode
 </table>
 
 #### Response ####
-nullable:disconnectedNode
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>ownerNode</td>
+<td>nullable:disconnectedNode</td>
+</tr>
+
+</table>

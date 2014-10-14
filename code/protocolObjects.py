@@ -29,9 +29,9 @@ def writeMessages(messages, actorName, output, dicts):
         md.writeTableEnd(output)
 
         retval = message["response"].get("_retval")
-        # then it's specified at the top-level, and we should unpack it into
-        # its component pieces
         if retval:
+            # then it's specified at the top-level, and we should unpack it into
+            # its component pieces
             md.writeH4("Response", output)
             retval = cleanName(retval)
             dictionary = getDictionary(retval, dicts)
@@ -46,12 +46,23 @@ def writeMessages(messages, actorName, output, dicts):
                 # the retval isn't really defined, and we just have to write what we have
                 output.write(retval)
                 md.writeLineBreak(output)
-                print actorName + " : " + message["name"] + " : " + retval + " : is not a predefined dictionary"
+                #print actorName + " : " + message["name"] + " : " + retval + " : is not a predefined dictionary"
         else:
-            responseList = message["response"].items()
-            if len(responseList) > 0:
+            # then retval isn't specified at the top level, and we have to dig into "response"
+            # items in response are either strings, in which case that's the value
+            # or they are dictionaries containing a single key "_retval", whose value is the item value
+            # ugh!
+            if message["response"]:
                 md.writeH4("Response", output)
-                output.write(responseList[0][1]["_retval"] + "\n")
+                response = message["response"]
+                md.writeTableStart(output)
+                md.writeTableRow(["from", actorName], output)
+                for responseItemName in response:
+                    if isinstance(response[responseItemName], dict):
+                        md.writeTableRow([responseItemName, response[responseItemName]["_retval"]], output)
+                    else:
+                        md.writeTableRow([responseItemName, response[responseItemName]], output)
+                md.writeTableEnd(output)
 
 def writeActor(actor, dicts):
     actorName = actor["typeName"]

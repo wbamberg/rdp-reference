@@ -33,7 +33,20 @@ layout: default
 </table>
 
 #### Response ####
-primitive
+
+<table>
+
+<tr>
+<td>from</td>
+<td>longstractor</td>
+</tr>
+
+<tr>
+<td>substring</td>
+<td>primitive</td>
+</tr>
+
+</table>
 
 ### release ###
 

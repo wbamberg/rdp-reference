@@ -23,4 +23,17 @@ layout: default
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>originalsource</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>longstring</td>
+</tr>
+
+</table>

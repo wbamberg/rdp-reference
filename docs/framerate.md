@@ -49,7 +49,20 @@ layout: default
 </table>
 
 #### Response ####
-array:number
+
+<table>
+
+<tr>
+<td>from</td>
+<td>framerate</td>
+</tr>
+
+<tr>
+<td>ticks</td>
+<td>array:number</td>
+</tr>
+
+</table>
 
 ### cancelRecording ###
 
@@ -84,7 +97,20 @@ array:number
 </table>
 
 #### Response ####
-boolean
+
+<table>
+
+<tr>
+<td>from</td>
+<td>framerate</td>
+</tr>
+
+<tr>
+<td>recording</td>
+<td>boolean</td>
+</tr>
+
+</table>
 
 ### getPendingTicks ###
 
@@ -113,4 +139,17 @@ boolean
 </table>
 
 #### Response ####
-array:number
+
+<table>
+
+<tr>
+<td>from</td>
+<td>framerate</td>
+</tr>
+
+<tr>
+<td>ticks</td>
+<td>array:number</td>
+</tr>
+
+</table>

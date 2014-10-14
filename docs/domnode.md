@@ -23,7 +23,20 @@ layout: default
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### setNodeValue ###
 
@@ -105,7 +118,20 @@ longstring
 </table>
 
 #### Response ####
-json
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>events</td>
+<td>json</td>
+</tr>
+
+</table>
 
 ### modifyAttributes ###
 

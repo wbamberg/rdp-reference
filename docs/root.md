@@ -84,4 +84,17 @@ json
 </table>
 
 #### Response ####
-string
+
+<table>
+
+<tr>
+<td>from</td>
+<td>root</td>
+</tr>
+
+<tr>
+<td>string</td>
+<td>string</td>
+</tr>
+
+</table>

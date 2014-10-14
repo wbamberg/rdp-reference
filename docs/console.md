@@ -76,7 +76,20 @@ json
 </table>
 
 #### Response ####
-array:chromium_consolemsg
+
+<table>
+
+<tr>
+<td>from</td>
+<td>console</td>
+</tr>
+
+<tr>
+<td>messages</td>
+<td>array:chromium_consolemsg</td>
+</tr>
+
+</table>
 
 ### clearMessagesCache ###
 

@@ -28,7 +28,20 @@ layout: default
 </table>
 
 #### Response ####
-boolean
+
+<table>
+
+<tr>
+<td>from</td>
+<td>preference</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>boolean</td>
+</tr>
+
+</table>
 
 ### getCharPref ###
 
@@ -52,7 +65,20 @@ boolean
 </table>
 
 #### Response ####
-string
+
+<table>
+
+<tr>
+<td>from</td>
+<td>preference</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>string</td>
+</tr>
+
+</table>
 
 ### getIntPref ###
 
@@ -76,7 +102,20 @@ string
 </table>
 
 #### Response ####
-number
+
+<table>
+
+<tr>
+<td>from</td>
+<td>preference</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>number</td>
+</tr>
+
+</table>
 
 ### getAllPrefs ###
 
@@ -95,7 +134,20 @@ number
 </table>
 
 #### Response ####
-json
+
+<table>
+
+<tr>
+<td>from</td>
+<td>preference</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>json</td>
+</tr>
+
+</table>
 
 ### setBoolPref ###
 

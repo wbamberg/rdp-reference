@@ -23,7 +23,20 @@ layout: default
 </table>
 
 #### Response ####
-json
+
+<table>
+
+<tr>
+<td>from</td>
+<td>device</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>json</td>
+</tr>
+
+</table>
 
 ### getWallpaper ###
 
@@ -42,7 +55,20 @@ json
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>device</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### screenshotToDataURL ###
 
@@ -61,7 +87,20 @@ longstring
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>device</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### getRawPermissionsTable ###
 
@@ -80,4 +119,17 @@ longstring
 </table>
 
 #### Response ####
-json
+
+<table>
+
+<tr>
+<td>from</td>
+<td>device</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>json</td>
+</tr>
+
+</table>

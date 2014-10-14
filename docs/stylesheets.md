@@ -23,7 +23,20 @@ layout: default
 </table>
 
 #### Response ####
-array:stylesheet
+
+<table>
+
+<tr>
+<td>from</td>
+<td>stylesheets</td>
+</tr>
+
+<tr>
+<td>styleSheets</td>
+<td>array:stylesheet</td>
+</tr>
+
+</table>
 
 ### addStyleSheet ###
 
@@ -47,4 +60,17 @@ array:stylesheet
 </table>
 
 #### Response ####
-stylesheet
+
+<table>
+
+<tr>
+<td>from</td>
+<td>stylesheets</td>
+</tr>
+
+<tr>
+<td>styleSheet</td>
+<td>stylesheet</td>
+</tr>
+
+</table>

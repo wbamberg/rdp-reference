@@ -97,7 +97,20 @@ layout: default
 </table>
 
 #### Response ####
-array:json
+
+<table>
+
+<tr>
+<td>from</td>
+<td>cssUsage</td>
+</tr>
+
+<tr>
+<td>reports</td>
+<td>array:json</td>
+</tr>
+
+</table>
 
 ### createPageReport ###
 
@@ -135,4 +148,17 @@ json
 </table>
 
 #### Response ####
-array:string
+
+<table>
+
+<tr>
+<td>from</td>
+<td>cssUsage</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>array:string</td>
+</tr>
+
+</table>

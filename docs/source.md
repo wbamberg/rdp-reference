@@ -23,7 +23,20 @@ layout: default
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>source</td>
+</tr>
+
+<tr>
+<td>source</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### blackbox ###
 

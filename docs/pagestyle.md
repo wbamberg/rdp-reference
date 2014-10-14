@@ -43,7 +43,20 @@ layout: default
 </table>
 
 #### Response ####
-json
+
+<table>
+
+<tr>
+<td>from</td>
+<td>pagestyle</td>
+</tr>
+
+<tr>
+<td>computed</td>
+<td>json</td>
+</tr>
+
+</table>
 
 ### getMatchedSelectors ###
 

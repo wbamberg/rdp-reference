@@ -23,7 +23,25 @@ layout: default
 </table>
 
 #### Response ####
-chromium_thread#actorid
+
+<table>
+
+<tr>
+<td>from</td>
+<td>tab</td>
+</tr>
+
+<tr>
+<td>threadActor</td>
+<td>chromium_thread#actorid</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>tabAttached</td>
+</tr>
+
+</table>
 
 ### navigateTo ###
 

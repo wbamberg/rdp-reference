@@ -23,7 +23,20 @@ layout: default
 </table>
 
 #### Response ####
-domwalker
+
+<table>
+
+<tr>
+<td>from</td>
+<td>inspector</td>
+</tr>
+
+<tr>
+<td>walker</td>
+<td>domwalker</td>
+</tr>
+
+</table>
 
 ### getPageStyle ###
 
@@ -42,7 +55,20 @@ domwalker
 </table>
 
 #### Response ####
-pagestyle
+
+<table>
+
+<tr>
+<td>from</td>
+<td>inspector</td>
+</tr>
+
+<tr>
+<td>pageStyle</td>
+<td>pagestyle</td>
+</tr>
+
+</table>
 
 ### getHighlighter ###
 
@@ -66,7 +92,20 @@ pagestyle
 </table>
 
 #### Response ####
-highlighter
+
+<table>
+
+<tr>
+<td>from</td>
+<td>inspector</td>
+</tr>
+
+<tr>
+<td>highligter</td>
+<td>highlighter</td>
+</tr>
+
+</table>
 
 ### getHighlighterByType ###
 
@@ -90,7 +129,20 @@ highlighter
 </table>
 
 #### Response ####
-nullable:customhighlighter
+
+<table>
+
+<tr>
+<td>from</td>
+<td>inspector</td>
+</tr>
+
+<tr>
+<td>highlighter</td>
+<td>nullable:customhighlighter</td>
+</tr>
+
+</table>
 
 ### getImageDataFromURL ###
 

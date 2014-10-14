@@ -23,7 +23,20 @@ layout: default
 </table>
 
 #### Response ####
-boolean
+
+<table>
+
+<tr>
+<td>from</td>
+<td>stylesheet</td>
+</tr>
+
+<tr>
+<td>disabled</td>
+<td>boolean</td>
+</tr>
+
+</table>
 
 ### getText ###
 
@@ -42,7 +55,20 @@ boolean
 </table>
 
 #### Response ####
-longstring
+
+<table>
+
+<tr>
+<td>from</td>
+<td>stylesheet</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>longstring</td>
+</tr>
+
+</table>
 
 ### getOriginalSources ###
 
@@ -61,7 +87,20 @@ longstring
 </table>
 
 #### Response ####
-nullable:array:originalsource
+
+<table>
+
+<tr>
+<td>from</td>
+<td>stylesheet</td>
+</tr>
+
+<tr>
+<td>originalSources</td>
+<td>nullable:array:originalsource</td>
+</tr>
+
+</table>
 
 ### getOriginalLocation ###
 
@@ -132,7 +171,20 @@ nullable:array:originalsource
 </table>
 
 #### Response ####
-nullable:array:mediarule
+
+<table>
+
+<tr>
+<td>from</td>
+<td>stylesheet</td>
+</tr>
+
+<tr>
+<td>mediaRules</td>
+<td>nullable:array:mediarule</td>
+</tr>
+
+</table>
 
 ### update ###
 
