@@ -8,8 +8,6 @@ layout: default
 
 ### attach ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -28,8 +26,6 @@ layout: default
 chromium_thread#actorid
 
 ### navigateTo ###
-
-#### Request ####
 
 <table>
 
@@ -52,8 +48,6 @@ chromium_thread#actorid
 
 ### reload ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -75,8 +69,6 @@ chromium_thread#actorid
 
 ### reconfigure ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -97,8 +89,6 @@ chromium_thread#actorid
 </table>
 
 ### detach ###
-
-#### Request ####
 
 <table>
 

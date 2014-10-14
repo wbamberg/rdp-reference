@@ -8,8 +8,6 @@ layout: default
 
 ### source ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -29,8 +27,6 @@ longstring
 
 ### blackbox ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -46,8 +42,6 @@ longstring
 </table>
 
 ### unblackbox ###
-
-#### Request ####
 
 <table>
 
@@ -65,8 +59,6 @@ longstring
 
 ### prettyPrint ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -82,8 +74,6 @@ longstring
 </table>
 
 ### disablePrettyPrint ###
-
-#### Request ####
 
 <table>
 

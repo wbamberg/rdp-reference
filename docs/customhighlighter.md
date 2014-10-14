@@ -8,8 +8,6 @@ layout: default
 
 ### show ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -36,8 +34,6 @@ layout: default
 
 ### hide ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -53,8 +49,6 @@ layout: default
 </table>
 
 ### finalize ###
-
-#### Request ####
 
 <table>
 

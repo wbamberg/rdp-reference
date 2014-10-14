@@ -8,7 +8,6 @@ def writeMessages(messages, actorName, output, dicts):
     for message in messages:
         md.writeH3(message["name"], output)
 
-        md.writeH4("Request", output)
         md.writeTableStart(output)
         md.writeTableRow(["to", actorName], output)
         md.writeTableRow(["type", message["request"]["type"]], output)

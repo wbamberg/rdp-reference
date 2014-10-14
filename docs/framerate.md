@@ -8,8 +8,6 @@ layout: default
 
 ### startRecording ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -25,8 +23,6 @@ layout: default
 </table>
 
 ### stopRecording ###
-
-#### Request ####
 
 <table>
 
@@ -57,8 +53,6 @@ array:number
 
 ### cancelRecording ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -74,8 +68,6 @@ array:number
 </table>
 
 ### isRecording ###
-
-#### Request ####
 
 <table>
 
@@ -95,8 +87,6 @@ array:number
 boolean
 
 ### getPendingTicks ###
-
-#### Request ####
 
 <table>
 

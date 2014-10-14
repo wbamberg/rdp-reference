@@ -8,8 +8,6 @@ layout: default
 
 ### reconfigure ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -30,8 +28,6 @@ layout: default
 </table>
 
 ### attach ###
-
-#### Request ####
 
 <table>
 
@@ -54,8 +50,6 @@ layout: default
 
 ### interrupt ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -71,8 +65,6 @@ layout: default
 </table>
 
 ### resume ###
-
-#### Request ####
 
 <table>
 
@@ -100,8 +92,6 @@ layout: default
 
 ### sources ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -120,8 +110,6 @@ layout: default
 array:chromium_source
 
 ### frames ###
-
-#### Request ####
 
 <table>
 
@@ -151,8 +139,6 @@ array:chromium_source
 array:chromium_frame
 
 ### setBreakpoint ###
-
-#### Request ####
 
 <table>
 

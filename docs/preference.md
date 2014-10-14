@@ -8,8 +8,6 @@ layout: default
 
 ### getBoolPref ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -33,8 +31,6 @@ layout: default
 boolean
 
 ### getCharPref ###
-
-#### Request ####
 
 <table>
 
@@ -60,8 +56,6 @@ string
 
 ### getIntPref ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -86,8 +80,6 @@ number
 
 ### getAllPrefs ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -106,8 +98,6 @@ number
 json
 
 ### setBoolPref ###
-
-#### Request ####
 
 <table>
 
@@ -135,8 +125,6 @@ json
 
 ### setCharPref ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -163,8 +151,6 @@ json
 
 ### setIntPref ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -190,8 +176,6 @@ json
 </table>
 
 ### clearUserPref ###
-
-#### Request ####
 
 <table>
 

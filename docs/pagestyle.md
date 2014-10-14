@@ -8,8 +8,6 @@ layout: default
 
 ### getComputed ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -49,8 +47,6 @@ json
 
 ### getMatchedSelectors ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -81,8 +77,6 @@ json
 </table>
 
 ### getApplied ###
-
-#### Request ####
 
 <table>
 
@@ -120,8 +114,6 @@ json
 
 ### getLayout ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -147,8 +139,6 @@ json
 </table>
 
 ### addNewRule ###
-
-#### Request ####
 
 <table>
 

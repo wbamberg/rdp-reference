@@ -8,8 +8,6 @@ layout: default
 
 ### getNodeValue ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -28,8 +26,6 @@ layout: default
 longstring
 
 ### setNodeValue ###
-
-#### Request ####
 
 <table>
 
@@ -52,8 +48,6 @@ longstring
 
 ### getImageData ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -75,8 +69,6 @@ longstring
 
 ### getEventListenerInfo ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -95,8 +87,6 @@ longstring
 json
 
 ### modifyAttributes ###
-
-#### Request ####
 
 <table>
 
@@ -118,8 +108,6 @@ json
 </table>
 
 ### getFontFamilyDataURL ###
-
-#### Request ####
 
 <table>
 

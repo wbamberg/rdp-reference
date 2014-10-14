@@ -8,8 +8,6 @@ layout: default
 
 ### toggleDisabled ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -28,8 +26,6 @@ layout: default
 boolean
 
 ### getText ###
-
-#### Request ####
 
 <table>
 
@@ -50,8 +46,6 @@ longstring
 
 ### getOriginalSources ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -70,8 +64,6 @@ longstring
 nullable:array:originalsource
 
 ### getOriginalLocation ###
-
-#### Request ####
 
 <table>
 
@@ -99,8 +91,6 @@ nullable:array:originalsource
 
 ### getMediaRules ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -119,8 +109,6 @@ nullable:array:originalsource
 nullable:array:mediarule
 
 ### update ###
-
-#### Request ####
 
 <table>
 

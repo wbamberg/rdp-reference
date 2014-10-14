@@ -8,8 +8,6 @@ layout: default
 
 ### listTabs ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -26,8 +24,6 @@ layout: default
 
 ### protocolDescription ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -43,8 +39,6 @@ layout: default
 </table>
 
 ### echo ###
-
-#### Request ####
 
 <table>
 

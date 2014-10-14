@@ -8,8 +8,6 @@ layout: default
 
 ### release ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -25,8 +23,6 @@ layout: default
 </table>
 
 ### pick ###
-
-#### Request ####
 
 <table>
 
@@ -44,8 +40,6 @@ layout: default
 
 ### cancelPick ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -61,8 +55,6 @@ layout: default
 </table>
 
 ### highlight ###
-
-#### Request ####
 
 <table>
 
@@ -84,8 +76,6 @@ layout: default
 </table>
 
 ### document ###
-
-#### Request ####
 
 <table>
 
@@ -111,8 +101,6 @@ domnode
 
 ### documentElement ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -136,8 +124,6 @@ domnode
 domnode
 
 ### parents ###
-
-#### Request ####
 
 <table>
 
@@ -168,8 +154,6 @@ array:domnode
 
 ### retainNode ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -191,8 +175,6 @@ array:domnode
 
 ### unretainNode ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -213,8 +195,6 @@ array:domnode
 </table>
 
 ### releaseNode ###
-
-#### Request ####
 
 <table>
 
@@ -241,8 +221,6 @@ array:domnode
 </table>
 
 ### children ###
-
-#### Request ####
 
 <table>
 
@@ -285,8 +263,6 @@ array:domnode
 
 ### siblings ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -328,8 +304,6 @@ array:domnode
 
 ### nextSibling ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -358,8 +332,6 @@ array:domnode
 nullable:domnode
 
 ### previousSibling ###
-
-#### Request ####
 
 <table>
 
@@ -390,8 +362,6 @@ nullable:domnode
 
 ### querySelector ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -417,8 +387,6 @@ nullable:domnode
 </table>
 
 ### querySelectorAll ###
-
-#### Request ####
 
 <table>
 
@@ -448,8 +416,6 @@ nullable:domnode
 domnodelist
 
 ### getSuggestionsForQuery ###
-
-#### Request ####
 
 <table>
 
@@ -485,8 +451,6 @@ array:array:string
 
 ### addPseudoClassLock ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -518,8 +482,6 @@ array:array:string
 
 ### hideNode ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -541,8 +503,6 @@ array:array:string
 
 ### unhideNode ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -563,8 +523,6 @@ array:array:string
 </table>
 
 ### removePseudoClassLock ###
-
-#### Request ####
 
 <table>
 
@@ -597,8 +555,6 @@ array:array:string
 
 ### clearPseudoClassLocks ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -619,8 +575,6 @@ array:array:string
 </table>
 
 ### innerHTML ###
-
-#### Request ####
 
 <table>
 
@@ -646,8 +600,6 @@ longstring
 
 ### outerHTML ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -671,8 +623,6 @@ longstring
 longstring
 
 ### setOuterHTML ###
-
-#### Request ####
 
 <table>
 
@@ -700,8 +650,6 @@ longstring
 
 ### removeNode ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -725,8 +673,6 @@ longstring
 nullable:domnode
 
 ### insertBefore ###
-
-#### Request ####
 
 <table>
 
@@ -759,8 +705,6 @@ nullable:domnode
 
 ### getMutations ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -784,8 +728,6 @@ nullable:domnode
 array:dommutation
 
 ### isInDOMTree ###
-
-#### Request ####
 
 <table>
 
@@ -811,8 +753,6 @@ boolean
 
 ### getNodeActorFromObjectActor ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -836,8 +776,6 @@ boolean
 nullable:disconnectedNode
 
 ### getStyleSheetOwnerNode ###
-
-#### Request ####
 
 <table>
 

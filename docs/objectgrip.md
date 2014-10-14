@@ -8,8 +8,6 @@ layout: default
 
 ### definitionSite ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -25,8 +23,6 @@ layout: default
 </table>
 
 ### parameterNames ###
-
-#### Request ####
 
 <table>
 
@@ -44,8 +40,6 @@ layout: default
 
 ### prototypeAndProperties ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -61,8 +55,6 @@ layout: default
 </table>
 
 ### prototype ###
-
-#### Request ####
 
 <table>
 
@@ -80,8 +72,6 @@ layout: default
 
 ### property ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -97,8 +87,6 @@ layout: default
 </table>
 
 ### displayString ###
-
-#### Request ####
 
 <table>
 
@@ -116,8 +104,6 @@ layout: default
 
 ### ownPropertyNames ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -133,8 +119,6 @@ layout: default
 </table>
 
 ### decompile ###
-
-#### Request ####
 
 <table>
 
@@ -152,8 +136,6 @@ layout: default
 
 ### release ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -169,8 +151,6 @@ layout: default
 </table>
 
 ### scope ###
-
-#### Request ####
 
 <table>
 

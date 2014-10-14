@@ -8,8 +8,6 @@ layout: default
 
 ### item ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -30,8 +28,6 @@ layout: default
 </table>
 
 ### items ###
-
-#### Request ####
 
 <table>
 
@@ -58,8 +54,6 @@ layout: default
 </table>
 
 ### release ###
-
-#### Request ####
 
 <table>
 

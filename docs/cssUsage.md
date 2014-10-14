@@ -8,8 +8,6 @@ layout: default
 
 ### start ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -31,8 +29,6 @@ layout: default
 
 ### stop ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -48,8 +44,6 @@ layout: default
 </table>
 
 ### toggle ###
-
-#### Request ####
 
 <table>
 
@@ -67,8 +61,6 @@ layout: default
 
 ### oneshot ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -84,8 +76,6 @@ layout: default
 </table>
 
 ### createEditorReport ###
-
-#### Request ####
 
 <table>
 
@@ -111,8 +101,6 @@ array:json
 
 ### createPageReport ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -128,8 +116,6 @@ array:json
 </table>
 
 ### _testOnly_visitedPages ###
-
-#### Request ####
 
 <table>
 

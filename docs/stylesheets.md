@@ -8,8 +8,6 @@ layout: default
 
 ### getStyleSheets ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -28,8 +26,6 @@ layout: default
 array:stylesheet
 
 ### addStyleSheet ###
-
-#### Request ####
 
 <table>
 

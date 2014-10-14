@@ -8,8 +8,6 @@ layout: default
 
 ### delete ###
 
-#### Request ####
-
 <table>
 
 <tr>

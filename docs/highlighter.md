@@ -8,8 +8,6 @@ layout: default
 
 ### showBoxModel ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -36,8 +34,6 @@ layout: default
 
 ### hideBoxModel ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -54,8 +50,6 @@ layout: default
 
 ### pick ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -71,8 +65,6 @@ layout: default
 </table>
 
 ### cancelPick ###
-
-#### Request ####
 
 <table>
 

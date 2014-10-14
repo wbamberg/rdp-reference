@@ -8,8 +8,6 @@ layout: default
 
 ### getWalker ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -29,8 +27,6 @@ domwalker
 
 ### getPageStyle ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -49,8 +45,6 @@ domwalker
 pagestyle
 
 ### getHighlighter ###
-
-#### Request ####
 
 <table>
 
@@ -76,8 +70,6 @@ highlighter
 
 ### getHighlighterByType ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -101,8 +93,6 @@ highlighter
 nullable:customhighlighter
 
 ### getImageDataFromURL ###
-
-#### Request ####
 
 <table>
 

@@ -8,8 +8,6 @@ layout: default
 
 ### getText ###
 
-#### Request ####
-
 <table>
 
 <tr>

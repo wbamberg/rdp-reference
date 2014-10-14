@@ -8,8 +8,6 @@ layout: default
 
 ### substring ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -38,8 +36,6 @@ layout: default
 primitive
 
 ### release ###
-
-#### Request ####
 
 <table>
 

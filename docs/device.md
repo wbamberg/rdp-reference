@@ -8,8 +8,6 @@ layout: default
 
 ### getDescription ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -28,8 +26,6 @@ layout: default
 json
 
 ### getWallpaper ###
-
-#### Request ####
 
 <table>
 
@@ -50,8 +46,6 @@ longstring
 
 ### screenshotToDataURL ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -70,8 +64,6 @@ longstring
 longstring
 
 ### getRawPermissionsTable ###
-
-#### Request ####
 
 <table>
 

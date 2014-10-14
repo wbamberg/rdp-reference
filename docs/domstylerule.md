@@ -8,8 +8,6 @@ layout: default
 
 ### modifyProperties ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -33,8 +31,6 @@ layout: default
 domstylerule
 
 ### modifySelector ###
-
-#### Request ####
 
 <table>
 

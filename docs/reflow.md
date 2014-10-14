@@ -8,8 +8,6 @@ layout: default
 
 ### start ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -25,8 +23,6 @@ layout: default
 </table>
 
 ### stop ###
-
-#### Request ####
 
 <table>
 

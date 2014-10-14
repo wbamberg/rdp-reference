@@ -8,8 +8,6 @@ layout: default
 
 ### startListeners ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -31,8 +29,6 @@ layout: default
 
 ### stopListeners ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -53,8 +49,6 @@ layout: default
 </table>
 
 ### getCachedMessages ###
-
-#### Request ####
 
 <table>
 
@@ -80,8 +74,6 @@ array:chromium_consolemsg
 
 ### clearMessagesCache ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -97,8 +89,6 @@ array:chromium_consolemsg
 </table>
 
 ### evaluateJS ###
-
-#### Request ####
 
 <table>
 
@@ -120,8 +110,6 @@ array:chromium_consolemsg
 </table>
 
 ### autocomplete ###
-
-#### Request ####
 
 <table>
 
@@ -149,8 +137,6 @@ array:chromium_consolemsg
 
 ### getPreferences ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -167,8 +153,6 @@ array:chromium_consolemsg
 
 ### setPreferences ###
 
-#### Request ####
-
 <table>
 
 <tr>
@@ -184,8 +168,6 @@ array:chromium_consolemsg
 </table>
 
 ### sendHTTPRequest ###
-
-#### Request ####
 
 <table>
 
