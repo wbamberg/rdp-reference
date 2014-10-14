@@ -38,6 +38,8 @@ layout: default
 
 </table>
 
+#### Response ####
+
 <table>
 
 <tr>
@@ -280,6 +282,8 @@ array:domnode
 
 </table>
 
+#### Response ####
+
 <table>
 
 <tr>
@@ -334,6 +338,8 @@ array:domnode
 </tr>
 
 </table>
+
+#### Response ####
 
 <table>
 
@@ -432,6 +438,8 @@ nullable:domnode
 </tr>
 
 </table>
+
+#### Response ####
 
 <table>
 

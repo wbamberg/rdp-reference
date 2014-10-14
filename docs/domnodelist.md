@@ -27,6 +27,8 @@ layout: default
 
 </table>
 
+#### Response ####
+
 <table>
 
 <tr>
@@ -71,6 +73,8 @@ layout: default
 </tr>
 
 </table>
+
+#### Response ####
 
 <table>
 

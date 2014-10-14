@@ -67,6 +67,8 @@ longstring
 
 </table>
 
+#### Response ####
+
 <table>
 
 <tr>
@@ -151,6 +153,8 @@ json
 </tr>
 
 </table>
+
+#### Response ####
 
 <table>
 
