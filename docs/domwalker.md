@@ -38,6 +38,25 @@ layout: default
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>newParents</td>
+<td>array:domnode</td>
+</tr>
+
+</table>
+
 ### cancelPick ###
 
 <table>
@@ -261,6 +280,20 @@ array:domnode
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>nodes</td>
+<td>array:domnode</td>
+</tr>
+
+</table>
+
 ### siblings ###
 
 <table>
@@ -298,6 +331,20 @@ array:domnode
 <tr>
 <td>whatToShow</td>
 <td>primitive</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>nodes</td>
+<td>array:domnode</td>
 </tr>
 
 </table>
@@ -382,6 +429,25 @@ nullable:domnode
 <tr>
 <td>selector</td>
 <td>primitive</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domwalker</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>newParents</td>
+<td>array:domnode</td>
 </tr>
 
 </table>

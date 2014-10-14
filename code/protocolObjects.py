@@ -3,6 +3,18 @@ import os
 import operator
 import md
 
+def cleanName(name):
+    prefix = "chromium_"
+    if name.startswith(prefix):
+        return name[len(prefix):]
+    return name
+
+def getDictionary(typeName, dicts):
+    for dictionary in dicts:
+        if dictionary["typeName"] == typeName:
+            return dictionary
+    return None
+
 def writeMessages(messages, actorName, output, dicts):
     md.writeH2("Messages", output)
     for message in messages:
@@ -17,12 +29,20 @@ def writeMessages(messages, actorName, output, dicts):
         md.writeTableEnd(output)
 
         retval = message["response"].get("_retval")
+        # then it's specified at the top-level, and we should unpack it into
+        # its component pieces
         if retval:
-            for dictionary in dicts:
-                if dictionary["typeName"] == retval:
-                    print retval + " is a dictionary type: "
-                    for specialization in dictionary["specializations"]:
-                        print specialization + " : " + dictionary["specializations"][specialization]
+            retval = cleanName(retval)
+            dictionary = getDictionary(retval, dicts)
+            if dictionary != None:
+                # then retval is defined as a dictionary type
+                md.writeTableStart(output)
+                md.writeTableRow(["from", actorName], output)
+                for specialization in dictionary["specializations"]:
+                    md.writeTableRow([specialization, dictionary["specializations"][specialization]], output)
+                md.writeTableEnd(output)
+            else:
+                print actorName + " : " + message["name"] + " : " + retval + " : is not a predefined dictionary"
         else:
             responseList = message["response"].items()
             if len(responseList) > 0:

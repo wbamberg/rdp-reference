@@ -76,6 +76,30 @@ json
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>pagestyle</td>
+</tr>
+
+<tr>
+<td>rules</td>
+<td>array:domstylerule</td>
+</tr>
+
+<tr>
+<td>sheets</td>
+<td>array:stylesheet</td>
+</tr>
+
+<tr>
+<td>matched</td>
+<td>array:matchedselector</td>
+</tr>
+
+</table>
+
 ### getApplied ###
 
 <table>
@@ -108,6 +132,30 @@ json
 <tr>
 <td>inherited</td>
 <td>boolean</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>pagestyle</td>
+</tr>
+
+<tr>
+<td>rules</td>
+<td>array:domstylerule</td>
+</tr>
+
+<tr>
+<td>sheets</td>
+<td>array:stylesheet</td>
+</tr>
+
+<tr>
+<td>entries</td>
+<td>array:appliedstyle</td>
 </tr>
 
 </table>
@@ -155,6 +203,30 @@ json
 <tr>
 <td>node</td>
 <td>domnode</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>pagestyle</td>
+</tr>
+
+<tr>
+<td>rules</td>
+<td>array:domstylerule</td>
+</tr>
+
+<tr>
+<td>sheets</td>
+<td>array:stylesheet</td>
+</tr>
+
+<tr>
+<td>entries</td>
+<td>array:appliedstyle</td>
 </tr>
 
 </table>

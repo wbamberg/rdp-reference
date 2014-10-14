@@ -67,6 +67,25 @@ longstring
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>nullable:longstring</td>
+</tr>
+
+<tr>
+<td>size</td>
+<td>json</td>
+</tr>
+
+</table>
+
 ### getEventListenerInfo ###
 
 <table>
@@ -129,6 +148,25 @@ json
 <tr>
 <td>fillStyle</td>
 <td>nullable:string</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>nullable:longstring</td>
+</tr>
+
+<tr>
+<td>size</td>
+<td>json</td>
 </tr>
 
 </table>

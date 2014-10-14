@@ -22,6 +22,25 @@ layout: default
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>root</td>
+</tr>
+
+<tr>
+<td>tabs</td>
+<td>array:chromium_tab</td>
+</tr>
+
+<tr>
+<td>selected</td>
+<td>number</td>
+</tr>
+
+</table>
+
 ### protocolDescription ###
 
 <table>

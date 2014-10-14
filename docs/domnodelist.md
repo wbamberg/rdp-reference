@@ -27,6 +27,25 @@ layout: default
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>domnodelist</td>
+</tr>
+
+<tr>
+<td>node</td>
+<td>domnode</td>
+</tr>
+
+<tr>
+<td>newParents</td>
+<td>array:domnode</td>
+</tr>
+
+</table>
+
 ### items ###
 
 <table>
@@ -49,6 +68,25 @@ layout: default
 <tr>
 <td>end</td>
 <td>nullable:number</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>domnodelist</td>
+</tr>
+
+<tr>
+<td>nodes</td>
+<td>array:domnode</td>
+</tr>
+
+<tr>
+<td>newParents</td>
+<td>array:domnode</td>
 </tr>
 
 </table>

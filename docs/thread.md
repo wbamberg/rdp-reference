@@ -163,3 +163,22 @@ array:chromium_frame
 </tr>
 
 </table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>thread</td>
+</tr>
+
+<tr>
+<td>actualLocation</td>
+<td>nullable:json</td>
+</tr>
+
+<tr>
+<td>actor</td>
+<td>chromium_breakpoint#actorid</td>
+</tr>
+
+</table>

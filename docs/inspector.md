@@ -117,3 +117,22 @@ nullable:customhighlighter
 </tr>
 
 </table>
+
+<table>
+
+<tr>
+<td>from</td>
+<td>inspector</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>nullable:longstring</td>
+</tr>
+
+<tr>
+<td>size</td>
+<td>json</td>
+</tr>
+
+</table>

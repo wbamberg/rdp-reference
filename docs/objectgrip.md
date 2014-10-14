@@ -54,6 +54,25 @@ layout: default
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>objectgrip</td>
+</tr>
+
+<tr>
+<td>ownProperties</td>
+<td>chromium_propertylist</td>
+</tr>
+
+<tr>
+<td>prototype</td>
+<td>nullable:chromium_grip</td>
+</tr>
+
+</table>
+
 ### prototype ###
 
 <table>

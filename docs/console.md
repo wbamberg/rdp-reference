@@ -109,6 +109,20 @@ array:chromium_consolemsg
 
 </table>
 
+<table>
+
+<tr>
+<td>from</td>
+<td>console</td>
+</tr>
+
+<tr>
+<td>result</td>
+<td>nullable:chromium_grip</td>
+</tr>
+
+</table>
+
 ### autocomplete ###
 
 <table>
