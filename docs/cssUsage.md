@@ -162,3 +162,26 @@ json
 </tr>
 
 </table>
+
+## Events ##
+
+### state-change ###
+
+<table>
+
+<tr>
+<td>from</td>
+<td>cssUsage</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>stateChange</td>
+</tr>
+
+<tr>
+<td>stateChange</td>
+<td>json</td>
+</tr>
+
+</table>

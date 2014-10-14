@@ -220,3 +220,26 @@ json
 </tr>
 
 </table>
+
+## Events ##
+
+### ConsoleAPI ###
+
+<table>
+
+<tr>
+<td>from</td>
+<td>console</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>consoleAPICall</td>
+</tr>
+
+<tr>
+<td>message</td>
+<td>chromium_consolemsg</td>
+</tr>
+
+</table>

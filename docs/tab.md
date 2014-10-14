@@ -121,3 +121,36 @@ layout: default
 </tr>
 
 </table>
+
+## Events ##
+
+### tab-navigated ###
+
+<table>
+
+<tr>
+<td>from</td>
+<td>tab</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>tabNavigated</td>
+</tr>
+
+<tr>
+<td>url</td>
+<td>string</td>
+</tr>
+
+<tr>
+<td>nativeConsoleAPI</td>
+<td>True</td>
+</tr>
+
+<tr>
+<td>state</td>
+<td>string</td>
+</tr>
+
+</table>
