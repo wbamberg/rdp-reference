@@ -36,6 +36,7 @@ def writeMessages(messages, actorName, output, dicts):
             dictionary = getDictionary(retval, dicts)
             if dictionary != None:
                 # then retval is defined as a dictionary type
+                md.writeH4("Response", output)
                 md.writeTableStart(output)
                 md.writeTableRow(["from", actorName], output)
                 for specialization in dictionary["specializations"]:
