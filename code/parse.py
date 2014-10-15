@@ -44,4 +44,6 @@ index.write("\n## Dictionaries ##\n\n")
 for dictionary in dicts:
     md.writeMDLink(dictionary["typeName"], dictionary["typeName"], index)
     md.writeLineBreak(index)
+    protocolObjects.writeDict(dictionary, dicts)
+
 

@@ -102,3 +102,19 @@ def writeActor(actor, dicts):
     writeMessages(actor["methods"], actorName, output, dicts)
     writeEvents(actor["events"], actorName, output, dicts)
 
+def writeProperties(properties, dictName, output, dicts):
+    if not properties:
+        return
+    md.writeH2("Properties", output)
+    md.writeTableStart(output)
+
+    for prop in properties:
+        md.writeTableRow([prop, formatType(properties[prop])], output)
+
+    md.writeTableEnd(output)
+
+def writeDict(dictionary, dicts):
+    dictName = dictionary["typeName"]
+    output = md.createFile("../docs/" + dictName + ".md")
+    md.writeH1(dictName, output)
+    writeProperties(dictionary["specializations"], dictName, output, dicts)
