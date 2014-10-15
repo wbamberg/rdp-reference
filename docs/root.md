@@ -33,7 +33,7 @@ layout: default
 
 <tr>
 <td>tabs</td>
-<td>array:chromium_tab</td>
+<td>Array of tab</td>
 </tr>
 
 <tr>

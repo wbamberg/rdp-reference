@@ -97,7 +97,7 @@ layout: default
 
 <tr>
 <td>originalSources</td>
-<td>nullable:array:originalsource</td>
+<td>Null or Array of originalsource</td>
 </tr>
 
 </table>
@@ -181,7 +181,7 @@ layout: default
 
 <tr>
 <td>mediaRules</td>
-<td>nullable:array:mediarule</td>
+<td>Null or Array of mediarule</td>
 </tr>
 
 </table>
@@ -272,7 +272,7 @@ layout: default
 
 <tr>
 <td>rules</td>
-<td>array:mediarule</td>
+<td>Array of mediarule</td>
 </tr>
 
 </table>

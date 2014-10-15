@@ -107,7 +107,7 @@ layout: default
 
 <tr>
 <td>reports</td>
-<td>array:json</td>
+<td>Array of json</td>
 </tr>
 
 </table>
@@ -158,7 +158,7 @@ json
 
 <tr>
 <td>value</td>
-<td>array:string</td>
+<td>Array of string</td>
 </tr>
 
 </table>

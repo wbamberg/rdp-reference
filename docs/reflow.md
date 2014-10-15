@@ -56,7 +56,7 @@ layout: default
 
 <tr>
 <td>reflows</td>
-<td>array:json</td>
+<td>Array of json</td>
 </tr>
 
 </table>

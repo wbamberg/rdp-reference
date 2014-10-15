@@ -117,7 +117,7 @@ layout: default
 
 <tr>
 <td>sources</td>
-<td>array:chromium_source</td>
+<td>Array of source</td>
 </tr>
 
 </table>
@@ -159,7 +159,7 @@ layout: default
 
 <tr>
 <td>frames</td>
-<td>array:chromium_frame</td>
+<td>Array of frame</td>
 </tr>
 
 </table>
@@ -185,7 +185,7 @@ layout: default
 
 <tr>
 <td>condition</td>
-<td>nullable:string</td>
+<td>Null or string</td>
 </tr>
 
 </table>
@@ -201,12 +201,12 @@ layout: default
 
 <tr>
 <td>actualLocation</td>
-<td>nullable:json</td>
+<td>Null or json</td>
 </tr>
 
 <tr>
 <td>actor</td>
-<td>chromium_breakpoint#actorid</td>
+<td>breakpoint#actorid</td>
 </tr>
 
 </table>
@@ -229,12 +229,12 @@ layout: default
 
 <tr>
 <td>poppedFrames</td>
-<td>array:string</td>
+<td>Array of string</td>
 </tr>
 
 <tr>
 <td>frame</td>
-<td>chromium_frame</td>
+<td>frame</td>
 </tr>
 
 <tr>
@@ -244,7 +244,7 @@ layout: default
 
 <tr>
 <td>actor</td>
-<td>chromium_pauseactor</td>
+<td>pauseactor</td>
 </tr>
 
 </table>
@@ -297,7 +297,7 @@ layout: default
 
 <tr>
 <td>source</td>
-<td>chromium_source</td>
+<td>source</td>
 </tr>
 
 </table>

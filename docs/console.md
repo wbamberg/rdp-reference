@@ -22,7 +22,7 @@ layout: default
 
 <tr>
 <td>listeners</td>
-<td>array:string</td>
+<td>Array of string</td>
 </tr>
 
 </table>
@@ -46,7 +46,7 @@ json
 
 <tr>
 <td>listeners</td>
-<td>array:string</td>
+<td>Array of string</td>
 </tr>
 
 </table>
@@ -70,7 +70,7 @@ json
 
 <tr>
 <td>messageTypes</td>
-<td>array:string</td>
+<td>Array of string</td>
 </tr>
 
 </table>
@@ -86,7 +86,7 @@ json
 
 <tr>
 <td>messages</td>
-<td>array:chromium_consolemsg</td>
+<td>Array of consolemsg</td>
 </tr>
 
 </table>
@@ -139,7 +139,7 @@ json
 
 <tr>
 <td>result</td>
-<td>nullable:chromium_grip</td>
+<td>Null or grip</td>
 </tr>
 
 </table>
@@ -239,7 +239,7 @@ json
 
 <tr>
 <td>message</td>
-<td>chromium_consolemsg</td>
+<td>consolemsg</td>
 </tr>
 
 </table>

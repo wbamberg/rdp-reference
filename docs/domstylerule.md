@@ -22,7 +22,7 @@ layout: default
 
 <tr>
 <td>modifications</td>
-<td>array:json</td>
+<td>Array of json</td>
 </tr>
 
 </table>

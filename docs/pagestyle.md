@@ -100,17 +100,17 @@ layout: default
 
 <tr>
 <td>rules</td>
-<td>array:domstylerule</td>
+<td>Array of domstylerule</td>
 </tr>
 
 <tr>
 <td>sheets</td>
-<td>array:stylesheet</td>
+<td>Array of stylesheet</td>
 </tr>
 
 <tr>
 <td>matched</td>
-<td>array:matchedselector</td>
+<td>Array of matchedselector</td>
 </tr>
 
 </table>
@@ -162,17 +162,17 @@ layout: default
 
 <tr>
 <td>rules</td>
-<td>array:domstylerule</td>
+<td>Array of domstylerule</td>
 </tr>
 
 <tr>
 <td>sheets</td>
-<td>array:stylesheet</td>
+<td>Array of stylesheet</td>
 </tr>
 
 <tr>
 <td>entries</td>
-<td>array:appliedstyle</td>
+<td>Array of appliedstyle</td>
 </tr>
 
 </table>
@@ -238,17 +238,17 @@ json
 
 <tr>
 <td>rules</td>
-<td>array:domstylerule</td>
+<td>Array of domstylerule</td>
 </tr>
 
 <tr>
 <td>sheets</td>
-<td>array:stylesheet</td>
+<td>Array of stylesheet</td>
 </tr>
 
 <tr>
 <td>entries</td>
-<td>array:appliedstyle</td>
+<td>Array of appliedstyle</td>
 </tr>
 
 </table>

@@ -38,12 +38,12 @@ layout: default
 
 <tr>
 <td>endAt</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 <tr>
 <td>beginAt</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 </table>
@@ -59,7 +59,7 @@ layout: default
 
 <tr>
 <td>ticks</td>
-<td>array:number</td>
+<td>Array of number</td>
 </tr>
 
 </table>
@@ -128,12 +128,12 @@ layout: default
 
 <tr>
 <td>endAt</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 <tr>
 <td>beginAt</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 </table>
@@ -149,7 +149,7 @@ layout: default
 
 <tr>
 <td>ticks</td>
-<td>array:number</td>
+<td>Array of number</td>
 </tr>
 
 </table>

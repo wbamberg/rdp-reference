@@ -54,7 +54,7 @@ layout: default
 
 <tr>
 <td>newParents</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>
@@ -91,7 +91,7 @@ layout: default
 
 <tr>
 <td>node</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -112,7 +112,7 @@ layout: default
 
 <tr>
 <td>node</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -149,7 +149,7 @@ layout: default
 
 <tr>
 <td>node</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -207,7 +207,7 @@ layout: default
 
 <tr>
 <td>nodes</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>
@@ -332,7 +332,7 @@ layout: default
 
 <tr>
 <td>nodes</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>
@@ -389,7 +389,7 @@ layout: default
 
 <tr>
 <td>nodes</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>
@@ -431,7 +431,7 @@ layout: default
 
 <tr>
 <td>node</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -473,7 +473,7 @@ layout: default
 
 <tr>
 <td>node</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -520,7 +520,7 @@ layout: default
 
 <tr>
 <td>newParents</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>
@@ -609,7 +609,7 @@ layout: default
 
 <tr>
 <td>list</td>
-<td>array:array:string</td>
+<td>Array of Array of string</td>
 </tr>
 
 </table>
@@ -734,7 +734,7 @@ layout: default
 
 <tr>
 <td>node</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -871,7 +871,7 @@ layout: default
 
 <tr>
 <td>nextSibling</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 </table>
@@ -897,7 +897,7 @@ layout: default
 
 <tr>
 <td>sibling</td>
-<td>nullable:domnode</td>
+<td>Null or domnode</td>
 </tr>
 
 <tr>
@@ -939,7 +939,7 @@ layout: default
 
 <tr>
 <td>mutations</td>
-<td>array:dommutation</td>
+<td>Array of dommutation</td>
 </tr>
 
 </table>
@@ -1013,7 +1013,7 @@ layout: default
 
 <tr>
 <td>nodeFront</td>
-<td>nullable:disconnectedNode</td>
+<td>Null or disconnectedNode</td>
 </tr>
 
 </table>
@@ -1050,7 +1050,7 @@ layout: default
 
 <tr>
 <td>ownerNode</td>
-<td>nullable:disconnectedNode</td>
+<td>Null or disconnectedNode</td>
 </tr>
 
 </table>
@@ -1163,7 +1163,7 @@ layout: default
 
 <tr>
 <td>nodes</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>

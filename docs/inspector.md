@@ -139,7 +139,7 @@ layout: default
 
 <tr>
 <td>highlighter</td>
-<td>nullable:customhighlighter</td>
+<td>Null or customhighlighter</td>
 </tr>
 
 </table>
@@ -165,7 +165,7 @@ layout: default
 
 <tr>
 <td>maxDim</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 </table>
@@ -181,7 +181,7 @@ layout: default
 
 <tr>
 <td>data</td>
-<td>nullable:longstring</td>
+<td>Null or longstring</td>
 </tr>
 
 <tr>

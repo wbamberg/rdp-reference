@@ -27,7 +27,7 @@ layout: default
 
 <tr>
 <td>options</td>
-<td>nullable:json</td>
+<td>Null or json</td>
 </tr>
 
 </table>

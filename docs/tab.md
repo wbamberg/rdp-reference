@@ -33,7 +33,7 @@ layout: default
 
 <tr>
 <td>threadActor</td>
-<td>chromium_thread#actorid</td>
+<td>thread#actorid</td>
 </tr>
 
 <tr>
@@ -80,7 +80,7 @@ layout: default
 
 <tr>
 <td>options</td>
-<td>nullable:json</td>
+<td>Null or json</td>
 </tr>
 
 </table>
@@ -101,7 +101,7 @@ layout: default
 
 <tr>
 <td>options</td>
-<td>nullable:json</td>
+<td>Null or json</td>
 </tr>
 
 </table>

@@ -3,6 +3,18 @@ import os
 import operator
 import md
 
+def formatType(unformatted):
+    components = unformatted.split(":")
+    formatted = ""
+    for component in components:
+        if component == "array":
+            formatted = formatted + "Array of "
+        elif component == "nullable":
+            formatted = formatted + "Null or "
+        else:
+            formatted = formatted + cleanName(component)
+    return formatted
+
 def cleanName(name):
     prefix = "chromium_"
     if name.startswith(prefix):
@@ -26,7 +38,7 @@ def writeMessages(messages, actorName, output, dicts):
         md.writeTableRow(["type", message["request"]["type"]], output)
         for param in message["request"]:
             if param != "type":
-                md.writeTableRow([param, message["request"][param]["type"]], output)
+                md.writeTableRow([param, formatType(message["request"][param]["type"])], output)
         md.writeTableEnd(output)
 
         retval = message["response"].get("_retval")
@@ -41,7 +53,7 @@ def writeMessages(messages, actorName, output, dicts):
                 md.writeTableStart(output)
                 md.writeTableRow(["from", actorName], output)
                 for specialization in dictionary["specializations"]:
-                    md.writeTableRow([specialization, dictionary["specializations"][specialization]], output)
+                    md.writeTableRow([specialization, formatType(dictionary["specializations"][specialization])], output)
                 md.writeTableEnd(output)
             else:
                 # the retval isn't really defined, and we just have to write what we have
@@ -60,9 +72,9 @@ def writeMessages(messages, actorName, output, dicts):
                 md.writeTableRow(["from", actorName], output)
                 for responseItemName in response:
                     if isinstance(response[responseItemName], dict):
-                        md.writeTableRow([responseItemName, response[responseItemName]["_retval"]], output)
+                        md.writeTableRow([responseItemName, formatType(response[responseItemName]["_retval"])], output)
                     else:
-                        md.writeTableRow([responseItemName, response[responseItemName]], output)
+                        md.writeTableRow([responseItemName, formatType(response[responseItemName])], output)
                 md.writeTableEnd(output)
 
 def writeEvents(events, actorName, output, dicts):
@@ -77,9 +89,9 @@ def writeEvents(events, actorName, output, dicts):
         for param in events[event]:
             if param != "type":
                 if isinstance(events[event][param], dict):
-                    md.writeTableRow([param, events[event][param]["type"]], output)
+                    md.writeTableRow([param, formatType(events[event][param]["type"])], output)
                 else:
-                    md.writeTableRow([param, str(events[event][param])], output)
+                    md.writeTableRow([param, formatType(str(events[event][param]))], output)
         md.writeTableEnd(output)
 
 

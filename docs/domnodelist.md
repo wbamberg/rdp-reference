@@ -43,7 +43,7 @@ layout: default
 
 <tr>
 <td>newParents</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>
@@ -64,12 +64,12 @@ layout: default
 
 <tr>
 <td>start</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 <tr>
 <td>end</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 </table>
@@ -85,12 +85,12 @@ layout: default
 
 <tr>
 <td>nodes</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 <tr>
 <td>newParents</td>
-<td>array:domnode</td>
+<td>Array of domnode</td>
 </tr>
 
 </table>

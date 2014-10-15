@@ -75,7 +75,7 @@ layout: default
 
 <tr>
 <td>maxDim</td>
-<td>nullable:number</td>
+<td>Null or number</td>
 </tr>
 
 </table>
@@ -91,7 +91,7 @@ layout: default
 
 <tr>
 <td>data</td>
-<td>nullable:longstring</td>
+<td>Null or longstring</td>
 </tr>
 
 <tr>
@@ -149,7 +149,7 @@ layout: default
 
 <tr>
 <td>modifications</td>
-<td>array:json</td>
+<td>Array of json</td>
 </tr>
 
 </table>
@@ -175,7 +175,7 @@ layout: default
 
 <tr>
 <td>fillStyle</td>
-<td>nullable:string</td>
+<td>Null or string</td>
 </tr>
 
 </table>
@@ -191,7 +191,7 @@ layout: default
 
 <tr>
 <td>data</td>
-<td>nullable:longstring</td>
+<td>Null or longstring</td>
 </tr>
 
 <tr>

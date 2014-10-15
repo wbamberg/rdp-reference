@@ -65,12 +65,12 @@ layout: default
 
 <tr>
 <td>ownProperties</td>
-<td>chromium_propertylist</td>
+<td>propertylist</td>
 </tr>
 
 <tr>
 <td>prototype</td>
-<td>nullable:chromium_grip</td>
+<td>Null or grip</td>
 </tr>
 
 </table>

@@ -33,7 +33,7 @@ layout: default
 
 <tr>
 <td>styleSheets</td>
-<td>array:stylesheet</td>
+<td>Array of stylesheet</td>
 </tr>
 
 </table>
